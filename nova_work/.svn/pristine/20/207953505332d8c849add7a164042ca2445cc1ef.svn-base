@@ -1,0 +1,48 @@
+require("../template/task-matrix.template.css");
+
+export default class TaskMatrixController{
+    constructor(TaskService,$rootScope) {
+        this.$rootScope=$rootScope;
+        this.TaskService = TaskService;
+        this.selects=[1,2,3,4,5];
+        this.getInstanceInfo();
+        this.setParam = {
+            TaskId: "",
+            SectionPackageIds:"",
+            CasePackageIds:""
+        };
+    }
+
+    getInstanceInfo(){
+        //获取matrixData
+        var self=this;
+        self.TaskService.getInstances().then(function(res){
+            self.instances= res.InstanceList;
+            self.SectionTree= res.SectionTree;
+            self.PackageList= res.PackageList;
+        });
+    }
+
+    setNpParams() {
+        self.TaskService.setNp(this.setParam, {
+            onSuccess: function (res) {
+            }
+        });
+    }
+
+    setNsParams() {
+        self.TaskService.setNs(this.setParam, {
+            onSuccess: function (res) {
+            }
+        });
+    }
+
+    setNormalParams() {
+        self.TaskService.setNormal(this.setParam, {
+            onSuccess: function (res) {
+            }
+        });
+    }
+
+}
+    TaskMatrixController.$inject = ["TaskService","$rootScope"];

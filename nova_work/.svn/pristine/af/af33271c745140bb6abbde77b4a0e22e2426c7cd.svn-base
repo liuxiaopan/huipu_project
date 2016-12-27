@@ -1,0 +1,307 @@
+{
+  "Status": "OK",
+  "Message": null,
+  "Data": {
+    "Task": {
+      "ID": 1601000300001,
+      "Name": "TaskInfo",
+      "Description": null,
+      "TouchType": 0,
+      "StartTime": "0001-01-01T00:00:00",
+      "EndTime": "0001-01-01T00:00:00",
+      "PlanId": 160100030001,
+      "Status": 0,
+      "Target": null,
+      "TestingSiteId": 0,
+      "TestLeaderId": 0,
+      "Keyword": null,
+      "task_total_onduty": 0,
+      "task_total_onduty_nobody": 0,
+      "CreateTime": "2016-11-09T11:24:27",
+      "AuthorId": 0,
+      "UpdateTime": "0001-01-01T00:00:00",
+      "UpdateUser": 0
+    },
+    "Plan": {
+      "ID": 160100030001,
+      "Name": "PlanName1",
+      "Description": "Description1",
+      "Comments": null,
+      "Status": 0,
+      "CategoryId": 0,
+      "Keywords": null,
+      "AuthorId": 1,
+      "CreateTime": "2016-11-09T11:23:47",
+      "Category": null
+    },
+    "InstanceList": [
+      {
+        "ID": 1601000300001000000,
+        "Name": "Instance0",
+        "PlatformId": 1,
+        "HwSku": "sku-1",
+        "HwPhase": "1",
+        "ComponentList": "1,2,3,4,5,6,7,8,9,10",
+        "Components": [],
+        "OS": 0,
+        "OSLang": 0
+      },
+      {
+        "ID": 1601000300001000001,
+        "Name": "Instance1",
+        "PlatformId": 1,
+        "HwSku": "sku-1",
+        "HwPhase": "1",
+        "ComponentList": "1,2,3,4,5,6,7,8,9,10",
+        "Components": [],
+        "OS": 0,
+        "OSLang": 0
+      },
+      {
+        "ID": 1601000300001000002,
+        "Name": "Instance2",
+        "PlatformId": 1,
+        "HwSku": "sku-1",
+        "HwPhase": "1",
+        "ComponentList": "1,2,3,4,5,6,7,8,9,10",
+        "Components": [],
+        "OS": 0,
+        "OSLang": 0
+      }
+    ],
+    "SectionTree": [
+      {
+        "ID": 16010000210001,
+        "Name": "Section0",
+        "PackageType": "S"
+      },
+      {
+        "SectionId": 16010000210001,
+        "ID": 16010008010001,
+        "Name": "Case0",
+        "PackageType": "C"
+      },
+      {
+        "SectionId": 16010000210001,
+        "ID": 16010008020001,
+        "Name": "Case0",
+        "PackageType": "C"
+      },
+      {
+        "SectionId": 16010000210001,
+        "ID": 16010008030001,
+        "Name": "Case0",
+        "PackageType": "C"
+      },
+      {
+        "ID": 16010000220001,
+        "Name": "Section1",
+        "PackageType": "S"
+      },
+      {
+        "SectionId": 16010000220001,
+        "ID": 16010008040001,
+        "Name": "Case1",
+        "PackageType": "C"
+      },
+      {
+        "SectionId": 16010000220001,
+        "ID": 16010008050001,
+        "Name": "Case1",
+        "PackageType": "C"
+      },
+      {
+        "SectionId": 16010000220001,
+        "ID": 16010008060001,
+        "Name": "Case1",
+        "PackageType": "C"
+      }
+    ],
+    "PackageList": [
+      [
+        {
+          "PT": "S",
+          "PID": 16010000210001,
+          "ID": 1601000300001000001,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "S",
+          "PID": 16010000210001,
+          "ID": 1601000300001000003,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "S",
+          "PID": 16010000210001,
+          "ID": 1601000300001000005,
+          "Status": 1,
+          "AssigneeId": 0
+        }
+      ],
+      [
+        {
+          "PT": "C",
+          "PID": 16010008010001,
+          "ID": 1601000300001000001,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008010001,
+          "ID": 1601000300001000007,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008010001,
+          "ID": 1601000300001000013,
+          "Status": 1,
+          "AssigneeId": 0
+        }
+      ],
+      [
+        {
+          "PT": "C",
+          "PID": 16010008020001,
+          "ID": 1601000300001000002,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008020001,
+          "ID": 1601000300001000008,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008020001,
+          "ID": 1601000300001000014,
+          "Status": 1,
+          "AssigneeId": 0
+        }
+      ],
+      [
+        {
+          "PT": "C",
+          "PID": 16010008030001,
+          "ID": 1601000300001000003,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008030001,
+          "ID": 1601000300001000009,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008030001,
+          "ID": 1601000300001000015,
+          "Status": 1,
+          "AssigneeId": 0
+        }
+      ],
+      [
+        {
+          "PT": "S",
+          "PID": 16010000220001,
+          "ID": 1601000300001000002,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "S",
+          "PID": 16010000220001,
+          "ID": 1601000300001000004,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "S",
+          "PID": 16010000220001,
+          "ID": 1601000300001000006,
+          "Status": 1,
+          "AssigneeId": 0
+        }
+      ],
+      [
+        {
+          "PT": "C",
+          "PID": 16010008040001,
+          "ID": 1601000300001000004,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008040001,
+          "ID": 1601000300001000010,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008040001,
+          "ID": 1601000300001000016,
+          "Status": 1,
+          "AssigneeId": 0
+        }
+      ],
+      [
+        {
+          "PT": "C",
+          "PID": 16010008050001,
+          "ID": 1601000300001000005,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008050001,
+          "ID": 1601000300001000011,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008050001,
+          "ID": 1601000300001000017,
+          "Status": 1,
+          "AssigneeId": 0
+        }
+      ],
+      [
+        {
+          "PT": "C",
+          "PID": 16010008060001,
+          "ID": 1601000300001000006,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008060001,
+          "ID": 1601000300001000012,
+          "Status": 1,
+          "AssigneeId": 0
+        },
+        {
+          "PT": "C",
+          "PID": 16010008060001,
+          "ID": 1601000300001000018,
+          "Status": 1,
+          "AssigneeId": 0
+        }
+      ]
+    ]
+  }
+}

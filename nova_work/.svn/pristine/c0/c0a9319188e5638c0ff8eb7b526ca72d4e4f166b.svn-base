@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="nova" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title translate="app.title"></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="build/lib/bootstrap/css/bootstrap.min.css">
+  <base href="/">
+</head>
+<body>
+  <nova-menu></nova-menu>
+  <div ui-view></div>
+  <footer>
+  	<div translate="app.license"></div>
+  	<div translate="app.copyright"></div>
+    <div translate="app.rtm"></div>
+  </footer>
+  <!--<select class="language-switching" ng-controller="LanguageSwitchingCtrl" ng-model="cur_lang" ng-change="switching(cur_lang)">
+    <option value="en">English</option>
+    <option value="cn">简体中文</option>
+  </select>-->
+
+  <script type="text/javascript" src="/build/lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/build/lib/bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="/build/lib/bootstrap/js/bootstrap-treeview.js"></script>
+  <script type="text/javascript" src="/build/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+//
+import modalCtrl from './plan-addNewPlan.controller.js'
+require("../templates/plan-search.template.css");
+
+
+export default class SectionListController{
+	constructor(SectionService,CreateModal,$http,$state){
+		this.$http = $http;
+		this.$state = $state;
+		var self = this;
+		this.modal = {
+			treeData: "",
+			title: "Add Section"
+		};
+		this.$http.get("http://172.17.5.55:9001/api/CategoryAPI/GetCategoryRoot").success(function(data){
+			var tree=data.Data.Children;
+			var formatTree= formatData(tree);
+			self.modal.treeData = formatTree;
+			self.treeData = formatTree;
+			$('#tree').treeview({
+				data: formatTree,
+				levels: 1,
+				onNodeSelected: function(event, data) {
+					console.log(data)
+					self.filter.CategoryId = data.SeachIds;
+				}
+				,
+				onNodeUnselected: function (event, data) {
+					self.filter.CategoryId = "";
+				}
+			});
+
+			$('#addPlanTree').treeview({
+				data: formatTree,
+				levels: 1,
+				onNodeSelected: function(event, data) {
+					console.log(data)
+					self.addPlanInfo.CategoryId = data.SeachIds;
+				}
+				,
+				onNodeUnselected: function (event, data) {
+					console.log(data)
+					self.addPlanInfo.CategoryId = "";
+				}
+			});
+
+			function formatData(cur){
+				var treeF=[];
+				var reg=new RegExp("Name","g"), reg2=new RegExp("Children","g");
+				for(var i=0;i<cur.length;i++){
+					var curStr=JSON.stringify(cur[i]);
+					curStr=curStr.replace(reg,"text").replace(reg2,"nodes");
+					var curObj=JSON.parse(curStr);
+					treeF.push(curObj);
+				}
+				return treeF;
+			}
+		});
+		this.SectionService = SectionService;
+		this.CreateModal = CreateModal;
+
+		this.ownerList = ["User1", "User2"];
+		this.editorList = ["User1", "User2"];
+		this.approverList = ["User1", "User1"];
+
+		this.statusArray = [];
+		this.statusKeyArray = [];
+		// the model of status input box
+		this.statusName = "";
+		this.statusList = {
+			0: "New",
+			10: "Published",
+			11: "Revoked"
+		};
+
+		this.actionList = {
+			Edit: "glyphicon-edit",
+			Submit: "glyphicon-ok",
+			Copy: "glyphicon-file",
+			Delete: "glyphicon-remove-circle",
+			Upgrade: "glyphicon glyphicon-upload"
+		}
+
+		// Pagination
+		this.maxSize = 6;
+
+		//search filter list
+		this.filter = {
+			CategoryId:"",
+			ID:"",
+			Name:"",
+			Status: "",
+			EditorId: "",
+			OwnerId:"",
+			DisplayAll:false,
+			OrderByItems:[
+				{"ColumnName":"ID","OrderBy":1}
+			],
+			PageId:1,
+			PageLimit:10
+		}
+
+		this.addSectionInfo = {
+			Name: "",
+			Description: "",
+			ChangeLog: "",
+			CategoryId: ""
+		}
+
+	}
+
+	getSearchInfo() {
+		this.resultDidMount = true;
+		var self = this;
+		console.log(this.filter)
+		self.SectionService.searchSections(this.filter, {
+			onSuccess: function (res) {
+				self.sections = res.Data.Models;
+				self.totalItems = res.Data.TotalCount;
+			}
+		})
+	}
+
+	openModal() {
+		var self = this;
+		var planAddNewPlanTemplateUrl = '/src/modules/plan/templates/plan-addNewPlan.template.html';
+		this.CreateModal.openModal(true, planAddNewPlanTemplateUrl, modalCtrl, 'lg', this.modal).result.then(function (result) {
+			self.addNewSection(result);
+		})
+	}
+
+	addNewSection(request) {
+		var self = this;
+		this.SectionService.addSection(request).then(function (res) {
+			self.$state.go('plan.sectionDetail', { contactId: res.Data.ID});
+		})
+	}
+
+	gotoDetail(sectionId) {
+		this.$state.go('plan.sectionDetail', { contactId: sectionId });
+	}
+
+	pageChanged () {
+		console.log('Page changed to: ' + this.filter.PageId);
+		this.getSearchInfo();
+	};
+
+	chooseStatus(status, key) {
+		if (this.statusArray.indexOf(status) == -1) {
+			this.statusArray.push(status);
+		}
+		if (this.statusKeyArray.indexOf(key) == -1) {
+			this.statusKeyArray.push(key);
+		}
+
+		this.statusName = this.statusArray.toString();
+		this.filter.Status = this.statusKeyArray.toString();
+	}
+
+	actionClick(e, actionName) {
+		e.stopPropagation();
+		console.log(actionName)
+	}
+}
+SectionListController.$inject = ["SectionService","CreateModal", "$http", "$state"];

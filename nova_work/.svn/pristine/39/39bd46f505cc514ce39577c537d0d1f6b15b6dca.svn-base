@@ -1,0 +1,129 @@
+
+export default class TaskService{
+    constructor($http, $q){
+        this.$http = $http;
+        this.$q = $q;
+        this.postCfg = {
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            transformRequest: function (data) {
+                return $.param(data);
+            }
+        };
+    }
+    getInstances() {
+        var deferred = this.$q.defer();
+        this.$http.get("/src/modules/Jsons/matrixJson.json").success(function (res) {
+                return deferred.resolve(res.Data);
+            });
+
+        return deferred.promise;
+    }
+    getCase() {
+        var deferred = this.$q.defer();
+        this.$http.get("/src/modules/Jsons/GetCaseAndSteps.json").success(function(res){
+            return deferred.resolve(res.Data);
+        });
+
+        return deferred.promise;
+    }
+    getSection() {
+        var deferred = this.$q.defer();
+        this.$http.get("/src/modules/Jsons/GetSectionPackage.json").success(function(res){
+            return deferred.resolve(res.Data);
+        });
+        return deferred.promise;
+    }
+    getInstanceData() {
+        var deferred = this.$q.defer();
+        this.$http.get("/src/modules/Jsons/GetInstance.json").success(function(res){
+            return deferred.resolve(res.Data);
+        });
+        return deferred.promise;
+    }
+    getTaskData(){
+        var deferred = this.$q.defer();
+        this.$http.get("/src/modules/Jsons/GetTaskAndPlan.json").success(function(res){
+            return deferred.resolve(res.Data);
+        });
+        return deferred.promise;
+    }
+
+    getTasks(searchInfo, callback) {
+        var deferred = this.$q.defer();
+        this.$http.post('http://172.17.5.55:9001/api/TaskAPI/Search', searchInfo, this.postCfg).success(function (res) {
+            callback.onSuccess(res)
+        });
+        return deferred.promise;
+
+    }
+
+    getTaskInfo(contactId) {
+        var deferred = this.$q.defer();
+        this.$http.get('http://172.17.5.55:9001/api/TaskAPI/GetTask?taskId=' + contactId).success(function (res) {
+            // console.log(res);
+            return deferred.resolve(res.Data);
+        });
+
+        return deferred.promise;
+    }
+
+    addTask(taskInfo) {
+        var deferred = this.$q.defer();
+
+        this.$http.post('http://172.17.5.55:9001/api/TaskAPI/AddTask', taskInfo, this.postCfg).success(function (res) {
+            return deferred.resolve(res);
+        });
+
+        return deferred.promise;
+    }
+
+    saveTaskInfo(taskInfo) {
+        var deferred = this.$q.defer();
+        var info = {};
+        info.Model = taskInfo;
+        info.ColumnaNames = [];
+        for (var key in taskInfo) {
+            info.ColumnaNames.push(key);
+        }
+        console.log(info);
+        this.$http.post('http://172.17.5.55:9001/api/TaskAPI/UpdateTask', info, this.postCfg).success(function (res) {
+            console.log("res:", res);
+            return deferred.resolve(res);
+        });
+        return deferred.promise;
+    }
+
+    sendTaskInfo(taskId) {
+        var deferred = this.$q.defer();
+        this.$http.get('http://172.17.5.55:9001/api/TaskAPI/SendTask?taskId=' + taskId).success(function (res) {
+            return deferred.resolve(res.Data);
+        });
+
+        return deferred.promise;
+    }
+
+    setNp(param) {
+        var deferred = this.$q.defer();
+        this.$http.post('http://172.17.5.55:9001/api/TaskAPI/SetPackageStatusNP', param, this.postCfg).success(function (res) {
+            return deferred.resolve(res);
+        });
+        return deferred.promise;
+    }
+
+    setNs(param) {
+        var deferred = this.$q.defer();
+        this.$http.post('http://172.17.5.55:9001/api/TaskAPI/SetPackageStatusNS', param, this.postCfg).success(function (res) {
+            return deferred.resolve(res);
+        });
+        return deferred.promise;
+    }
+
+    setNormal(param) {
+        var deferred = this.$q.defer();
+        this.$http.post('http://172.17.5.55:9001/api/TaskAPI/SetPackageStatusNormal', param, this.postCfg).success(function (res) {
+            return deferred.resolve(res);
+        });
+        return deferred.promise;
+    }
+}
+TaskService.$inject = ["$http", "$q"];

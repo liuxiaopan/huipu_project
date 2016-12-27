@@ -1,0 +1,145 @@
+/**
+ * Created by LiuPan on 2016/10/20.
+ */
+export default class CaseDetailService{
+    constructor($http, $q){
+        this.$http = $http;
+        this.$q = $q;
+        this.postCfg = {
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          transformRequest: function (data) {
+            return $.param(data);
+          }
+        };
+    }
+
+    getCase(contactId){
+      var deferred = this.$q.defer();
+
+      this.$http.get('http://172.17.5.55:9001/api/CaseAPI/GetCase?caseId=' + contactId).success(function(res){
+          console.log(res);
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+    getPlanOwner(){
+      var deferred = this.$q.defer();
+      this.$http.get("/src/modules/Jsons/owners.json").success(function(res){
+        return deferred.resolve(res.Data.Models);
+      });
+
+      return deferred.promise;
+    }
+    getCases(data) {
+        var deferred = this.$q.defer();
+
+      this.$http.post('http://172.17.5.55:9001/api/SectionAPI/GetCases', data, this.postCfg).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+        return deferred.promise;
+    }
+    getFamily(data) {
+        var deferred = this.$q.defer();
+
+      this.$http.post('http://172.17.5.55:9001/api/CaseAPI/GetFamily', data, this.postCfg).success(function(res){
+        return deferred.resolve(res);
+      });
+      return deferred.promise;
+    }
+    getPlans(data) {
+        var deferred = this.$q.defer();
+        this.$http.post("http://172.17.5.55:9001/api/SectionAPI/GetPlans", data, this.postCfg).success(function(res){
+            return deferred.resolve(res.Data);
+        });
+
+        return deferred.promise;
+    }
+
+    getTreeView(){
+      var deferred = this.$q.defer();
+      //this.$http.get("/src/modules/Jsons/treeview.json").success(function(res){
+      //    return deferred.resolve(res);
+      //});
+      var planId = '160100010001';
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/GetPlanTree?planId=' + planId).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+
+
+    submitCase(id) {
+      var deferred = this.$q.defer();
+
+      this.$http.get('http://172.17.5.55:9001/api/CaseAPI/Submit?caseId=' + id).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+
+    publishCase(id) {
+      var deferred = this.$q.defer();
+
+      this.$http.get('http://172.17.5.55:9001/api/CaseAPI/Publish?caseId=' + id).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+
+    upgradeCase(id) {
+      var deferred = this.$q.defer();
+      this.$http.get('http://172.17.5.55:9001/api/CaseAPI/Upgrade?caseId=' + id).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+    deleteCase(id) {
+      var deferred = this.$q.defer();
+
+      this.$http.get('http://172.17.5.55:9001/api/CaseAPI/Delete?caseId=' + id).success(function(){
+        return deferred.resolve();
+      });
+      return deferred.promise;
+    }
+    copyCase(id) {
+      var deferred = this.$q.defer();
+      this.$http.get('http://172.17.5.55:9001/api/CaseAPI/Copy?caseId=' + id).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+
+    //service for change owner, editor, apporover, category
+
+    changeOwner(caseId, userId) {
+      var deferred = this.$q.defer();
+      this.$http.get('http://172.17.5.55:9001/api/CaseAPI/ChangeOwner?caseId=' + caseId + '&userid=' + userId)
+        .success(function(res){
+          return deferred.resolve(res.Data);
+      });
+      return deferred.promise;
+    }
+    changeEditor(caseId, userId) {
+      var deferred = this.$q.defer();
+      this.$http.get('http://172.17.5.55:9001/api/CaseAPI/ChangeEditor?caseId=' + caseId + '&userid=' + userId)
+        .success(function(res){
+          return deferred.resolve(res.Data);
+        });
+      return deferred.promise;
+    }
+    changeCategory(caseId, categoryId) {
+      var deferred = this.$q.defer();
+      this.$http.get('http://172.17.5.55:9001/api/CaseAPI/ChangeCategory?caseId=' + caseId + '&categoryId=' + categoryId)
+        .success(function(res){
+          return deferred.resolve(res.Data);
+        });
+      return deferred.promise;
+    }
+}
+CaseDetailService.$inject = ["$http", "$q"];

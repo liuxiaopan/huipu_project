@@ -1,0 +1,539 @@
+<div class="container-fluid nova-task-desktop">
+    <div class="row-fluid page-header">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="nova-left-menu">
+                    <ul>
+                        <li>
+                            <label class="nova-level">Task:</label>
+                            <select class="form-control nova-select ng-pristine ng-valid ng-not-empty ng-touched">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label class="nova-level">Instance:</label>
+                            <select class="form-control nova-select ng-pristine ng-valid ng-not-empty ng-touched">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul class="nova-sec-case">
+                        <li ng-repeat="SectionTree in $ctrl.SectionTree" ng-show='(SectionTree.PackageType==="C"&&$ctrl.showCase&& SectionTree.SectionId==$ctrl.secId)||SectionTree.PackageType==="S"'>
+                            <div ng-hide='SectionTree.PackageType==="C"'class="nova-glyphicon-ctrl"  ng-click="$ctrl.showCases(SectionTree.ID,$index)">
+                                <span class="glyphicon glyphicon-plus"  ng-show="$ctrl.showCtrlBtn && $ctrl.index==$index"></span>
+                                <span class="glyphicon glyphicon-minus" ng-hide="$ctrl.showCtrlBtn && $ctrl.index==$index"></span>
+                            </div>
+                            <span class="nova-sec-case">{{SectionTree.Name}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="container nova-content">
+                    <div class="tabbable">
+                        <ul id="myTab" class="nav nav-tabs">
+                            <li class="active" ng-class="{'active': $ctrl.current === 0}" ng-click="$ctrl.show(0)">
+                                <a href="" data-toggle="tab"  ng-click="$ctrl.getTaskData()">Task&Plan</a>
+                            </li>
+                            <li ng-class="{'active': $ctrl.current === 1}" ng-click="$ctrl.show(1)">
+                                <a href=""  ng-click="$ctrl.getInstanceData()">Instance</a>
+                            </li>
+                            <li ng-class="{'active': $ctrl.current === 2}" ng-click="$ctrl.show(2)">
+                                <a href="" data-toggle="tab" ng-click="$ctrl.getSectionInfo()">Section</a>
+                            </li>
+                            <li ng-class="{'active': $ctrl.current === 3}" ng-click="$ctrl.show(3)">
+                                <a href="" data-toggle="tab" ng-click="$ctrl.getCaseInfo()">Case&Steps</a>
+                            </li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content nova-content-tab" ui-view="content">
+                            <div class="tab-pane fade in " ng-class="{'active': $ctrl.current === 0}">
+                                <div class="nova-card-box">
+                                    <div class="nova-card">Task:</div>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <div class="col-sm-5">
+                                                    <span >Task Name:</span>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    {{$ctrl.taskData.Name}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                             <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <div class="col-sm-5">
+                                                    <span>Status:</span>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    {{$ctrl.taskData.Status}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <div class="form-group row">
+                                                    <div class="col-md-3">
+                                                        <span>Task Description:</span>
+                                                        </div>
+                                                    <div class="col-sm-7">
+                                                       <textarea class="form-control">{{$ctrl.taskData.Description}}</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-md-5">
+                                                        <span>Start Time:</span>
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        {{$ctrl.taskData.StartTime}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">'
+                                                    <div class="col-sm-5">
+                                                        <span>End Time:</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        {{$ctrl.taskData.EndTime}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    </div>
+                                  <div class="nova-card-box">
+                                    <div class="nova-card">Plan:</div>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-5">
+                                                        <span >Plan ID:</span>
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        {{$ctrl.planData.ID}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-5">
+                                                        <span>Plan Name:</span>
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        {{$ctrl.planData.Name}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <div class="form-group row">
+                                                    <div class="col-md-3">
+                                                        <span>Plan Description:</span>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <textarea class="form-control">{{$ctrl.planData.Description}}</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade in" ng-class="{'active': $ctrl.current === 1}"
+                                 ng-click="$ctrl.show(1)">
+                                <div class="nova-card-box">
+                                    <div class="nova-card">Instance:</div>
+                                    <ul class="nova-instance-box">
+                                        <li>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-2 nova-label-ctrl">
+                                                        <span >Instance Name:</span>
+                                                    </div>
+                                                    <div class="col-sm-10">
+                                                        {{$ctrl.instanceData.Name}}
+                                                    </div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group row">
+                                                <div class="col-sm-2 nova-label-ctrl">
+                                                    <span >Plat Form:</span>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    {{$ctrl.instanceData.PlatformId}}
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group row">
+                                                <div class="col-sm-2 nova-label-ctrl">
+                                                    <span >HwSku:</span>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    {{$ctrl.instanceData.HwSku}}
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group row">
+                                                <div class="col-sm-2 nova-label-ctrl">
+                                                    <span >HwPhase:</span>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    {{$ctrl.instanceData.HwPhase}}
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group row">
+                                                <div class="col-sm-2 nova-label-ctrl">
+                                                    <span >OS:</span>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    {{$ctrl.instanceData.OS}}
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group row">
+                                                <div class="col-sm-2 nova-label-ctrl">
+                                                    <span >OS Lang:</span>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    {{$ctrl.instanceData.OS}}
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group row">
+                                                <div class="col-sm-2 nova-label-ctrl">
+                                                    <span >OS Language:</span>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    {{$ctrl.instanceData.OSLang}}
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group row">
+                                                <div class="col-sm-2 nova-label-ctrl" style="width: 18%;">
+                                                    <span >Component List:</span>
+                                                </div>
+                                                <div class="col-sm-9">
+                                                   <ul>
+                                                       <li ng-repeat="ComponentList in $ctrl.instanceData.ComponentList">{{ComponentList}}</li>
+                                                   </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade in" ng-class="{'active': $ctrl.current === 2}"
+                                 ng-click="$ctrl.show(2)">
+                                <div class="nova-card-box">
+                                    <div class="nova-card">Section:</div>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-5">
+                                                        <span >Section Name:</span>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        {{$ctrl.sectionData.Section.Name}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-3">
+                                                        <span>Status:</span>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        {{$ctrl.sectionData.Section.Status}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <div class="form-group row">
+                                                    <div class="col-md-3">
+                                                        <span>Section Description:</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <textarea class="form-control">{{$ctrl.sectionData.Section.Description}}</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <div class="form-group row">
+                                                    <div class="col-md-3">
+                                                        <span>Change Log:</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <textarea class="form-control">{{$ctrl.sectionData.Section.ChangeLog}}</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-md-5">
+                                                        <span>Assigner:</span>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        {{$ctrl.sectionData.SectionPackage.AssignerName}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-md-3">
+                                                        <span>Assignee:</span>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        {{$ctrl.sectionData.SectionPackage.AssigneeName}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    </div>
+                            </div>
+                            <div class="tab-pane fade in" ng-class="{'active': $ctrl.current === 3}" ng-click="$ctrl.show(3)">
+                                <div class="nova-card-box">
+                                    <div class="nova-card">Case:</div>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-5">
+                                                        <span >Case ID:</span>
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        {{$ctrl.caseInfo.ID}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-5">
+                                                        <span>Case Name:</span>
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        {{$ctrl.caseInfo.Name}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <div class="form-group row">
+                                                    <div class="col-md-3">
+                                                        <span>Case Description:</span>
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        <textarea class="form-control">{{$ctrl.caseInfo.Description}}</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-md-5">
+                                                        <span>KAT(s):</span>
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        <input type="text" class="form-control" placeholder="{{$ctrl.caseInfo.KAT}}">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-md-5">
+                                                        <span>Status:</span>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                     {{$ctrl.caseInfo.Status}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-md-5">
+                                                        <span>KUT(s):</span>
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        <input type="text" class="form-control"  placeholder="{{$ctrl.caseInfo.KUT}}">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-md-5">
+                                                        <span>Result:</span>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        {{$ctrl.CasePackage.Result}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-md-5" style="width: 40%;">
+                                                        <span>Component List:</span>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <ul class="nova-component-list">
+                                                            <li>Component1</li>
+                                                            <li>Component2</li>
+                                                            <li>Component3</li>
+                                                            <li>Component4</li>
+                                                            <li>Component5</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <button class="btn btn-primary">Edit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <div class="col-md-5">
+                                                        <span>Assigner:</span>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        {{$ctrl.CasePackage.AssignerName}}
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-md-5">
+                                                        <span>Tester:</span>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        {{$ctrl.CasePackage.AssigneeName}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group nova-case-ctrl">
+                                                <button class="btn btn-primary">Save</button>
+                                                <button class="btn btn-primary">Next&Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+</div>
+                                <div class="nova-card-box">
+                                    <div class="nova-card">Steps:</div>
+                                    <form class="form-horizontal" role="form">
+                                        <table class="table table-bordered" style="width: 95%;">
+                                            <thead>
+                                            <th></th>
+                                            <th>Description</th>
+                                            <th>Exception</th>
+                                            <th>Comments</th>
+                                            <th>Result</th>
+                                            <th>New OBS ID</th>
+                                            <th>Ref OBS ID</th>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><input type="text" class="form-control"/></td>
+                                                <td><select class="form-control">
+                                                    <option value="Pass">Pass</option>
+                                                    <option value="Block">Block</option>
+                                                    <option value="Fail">Fail</option>
+                                                </select></td>
+                                                <td></td>
+                                                <td></td></tr>
+                                            <tr><td>2</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><input type="text" class="form-control"/></td>
+                                                <td><select  class="form-control">
+                                                    <option value="Pass">Pass</option>
+                                                    <option value="Block">Block</option>
+                                                    <option value="Fail">Fail</option>
+                                                </select></td>
+                                                <td></td>
+                                                <td></td></tr>
+                                            <tr><td>3</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><input type="text" class="form-control"/></td>
+                                                <td><select  class="form-control">
+                                                    <option value="Pass">Pass</option>
+                                                    <option value="Block">Block</option>
+                                                    <option value="Fail">Fail</option>
+                                                </select></td>
+                                                <td></td>
+                                                <td></td></tr>
+                                            <tr><td>4</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><input type="text" class="form-control"/></td>
+                                                <td><select  class="form-control">
+                                                    <option value="Pass">Pass</option>
+                                                    <option value="Block">Block</option>
+                                                    <option value="Fail">Fail</option>
+                                                </select></td>
+                                                <td></td>
+                                                <td></td></tr>
+                                            <tr><td>5</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><input type="text" class="form-control"/></td>
+                                                <td><select  class="form-control">
+                                                    <option value="Pass">Pass</option>
+                                                    <option value="Block">Block</option>
+                                                    <option value="Fail">Fail</option>
+                                                </select></td>
+                                                <td></td>
+                                                <td></td></tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="nova-footer container">
+        <div class="btn-group nova-btn-group" ng-repeat="btnText in btnsText">
+            <button class="btn btn-primary nova-change" ng-click="novaBtnCtrl(btnText)">{{btnText}}</button>
+
+        </div>
+    </footer>
+</div>
+</div>

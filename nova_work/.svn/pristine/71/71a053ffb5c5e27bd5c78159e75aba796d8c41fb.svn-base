@@ -1,0 +1,68 @@
+import modalCtrl from '../modal/js/task-add-new-task.controller.js'
+require("../template/task-search.template.css");
+
+export default class TaskSearchController {
+    constructor(TaskService, CreateModal, $http, $state) {
+        this.$http = $http;
+        this.$state = $state;
+        this.TaskService = TaskService;
+        this.CreateModal = CreateModal;
+
+        this.statusList = [1, 2, 3];
+        this.planNameList = ["User1", "User2"];
+        this.planIdList = ["12345", "54321"];
+        // Pagination
+        this.maxSize = 6;
+
+        this.filter = {
+            PlanId: "",
+            PlanName: "",
+
+            OrderByItems: [
+                {"ColumnName": "ID", "OrderBy": 1}
+            ],
+            PageId: 1,
+            PageLimit: 10
+        }
+
+        this.modal = {
+            title: "Add Task"
+        };
+    }
+
+    getSearchInfo() {
+        this.resultDidMount = true;
+        var self = this;
+      self.TaskService.getTasks(this.filter).then(function (res) {
+        self.tasks = res.Data.Models;
+        self.totalItems = res.Data.TotalCount;
+        });
+    }
+
+    gotoDetail(task) {
+        this.$state.go('task.taskDetail', {contactId: task});
+    }
+
+    pageChanged() {
+        console.log('Page changed to: ' + this.filter.PageId);
+        this.getSearchInfo();
+    };
+
+    openModal() {
+        var self = this;
+        var addNewTaskTemplateUrl = '/src/modules/task/modal/template/task-add-new-task.template.html';
+        this.CreateModal.openModal(true, addNewTaskTemplateUrl, modalCtrl, 'lg', this.modal).result.then(function (result) {
+
+            self.addNewTask(result);
+        });
+    }
+
+    addNewTask(request) {
+        var self = this;
+        this.TaskService.addTask(request).then(function (res) {
+            console.log(res);
+            self.$state.go('task.taskDetail', {contactId: res.Data.ID});
+        });
+    }
+}
+TaskSearchController.$inject = ["TaskService", "CreateModal", "$http", "$state"];

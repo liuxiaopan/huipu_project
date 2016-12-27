@@ -1,0 +1,35 @@
+<div class="modal-header">
+  <a ng-click="$ctrl.cancel()" type="button" class="close">×</a>
+  <h4 class="modal-title" id="modal-title">{{$ctrl.items.title}}</h4>
+</div>
+
+<div class="modal-body  container-fluid nova-new-plan">
+  <div class="nova-content">
+    <div class="col-md">
+      <div id="addPlanTree"></div>
+    </div>
+    <div class="col-mdd">
+      <form role="form">
+        <div class="form-group">
+          <label for="addPlanName">Name</label>
+          <input ng-model="$ctrl.addPlanInfo.Name" class="form-control" id="addPlanName" autofocus placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label for="addPlanDesc">Description</label>
+          <textarea ng-model="$ctrl.addPlanInfo.Description" class="form-control" id="addPlanDesc"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="addPlanDesc">ChangeLog</label>
+          <textarea ng-model="$ctrl.addPlanInfo.ChangeLog" class="form-control" id="addPlanChangeLog"></textarea>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Close</button>
+  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Save</button>
+
+</div>

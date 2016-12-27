@@ -1,0 +1,149 @@
+//
+import modalCtrl from './plan-add-new.controller.js'
+import PlanAddNewCase from '../templates/plan-add-new.template.html'
+require("../templates/plan-search.template.css");
+
+
+export default class CaseListController{
+	constructor(CaseService,CreateModal,$http,$state){
+		this.$http = $http;
+		this.$state = $state;
+		var self = this;
+		this.modal = {
+			treeData: "",
+			title: "Add Case"
+		};
+		this.$http.get("http://172.17.5.55:9001/api/CategoryAPI/GetCategoryRoot").success(function(data){
+			var tree=data.Data.Children;
+			var formatTree= formatData(tree);
+			self.modal.treeData = formatTree;
+			$('#tree').treeview({
+				data: formatTree,
+				levels: 1,
+				onNodeSelected: function(event, data) {
+					console.log(data)
+					self.filter.CategoryId = data.SeachIds;
+				}
+				,
+				onNodeUnselected: function (event, data) {
+					self.filter.CategoryId = "";
+				}
+			});
+
+
+			function formatData(cur){
+				var treeF=[];
+				var reg=new RegExp("Name","g"), reg2=new RegExp("Children","g");
+				for(var i=0;i<cur.length;i++){
+					var curStr=JSON.stringify(cur[i]);
+					curStr=curStr.replace(reg,"text").replace(reg2,"nodes");
+					var curObj=JSON.parse(curStr);
+					treeF.push(curObj);
+				}
+				return treeF;
+			}
+		});
+		this.CaseService = CaseService;
+		this.CreateModal = CreateModal;
+
+		this.ownerList = ["User1", "User2"];
+		this.editorList = ["User1", "User2"];
+		this.approverList = ["User1", "User1"];
+
+		this.statusArray = [];
+		this.statusKeyArray = [];
+		// the model of status input box
+		this.statusName = "";
+		this.statusList = {
+			0: "New",
+			10: "Published",
+			11: "Revoked"
+		};
+
+		this.actionList = {
+			Edit: "glyphicon-edit",
+			Submit: "glyphicon-ok",
+			Copy: "glyphicon-file",
+			Delete: "glyphicon-remove-circle",
+			Upgrade: "glyphicon glyphicon-upload"
+		}
+
+		// Pagination
+		this.maxSize = 6;
+
+		//search filter list
+		this.filter = {
+			CategoryId:"",
+			ID:"",
+			Name:"",
+			Status: "",
+			EditorId: "",
+			OwnerId:"",
+			DisplayAll:false,
+			OrderByItems:[
+				{"ColumnName":"ID","OrderBy":1}
+			],
+			PageId:1,
+			PageLimit:10
+		};
+
+		this.addPlanInfo = {
+			Name: "",
+			Description: "",
+			ChangeLog: "",
+			CategoryId: ""
+		}
+
+	}
+
+	getSearchInfo() {
+		this.resultDidMount = true;
+		var self = this;
+		console.log(this.filter)
+    self.CaseService.searchCases(this.filter).then(function (res) {
+      self.cases = res.Data.Models;
+      self.totalItems = res.Data.TotalCount;
+    });
+	}
+
+	openModal() {
+		var self = this;
+		this.CreateModal.openModal(true, PlanAddNewCase, modalCtrl, 'lg', this.modal).result.then(function (result) {
+			self.addNewPlan(result);
+		})
+	}
+
+	addNewPlan(request) {
+		var self = this;
+		this.CaseService.addCase(request).then(function (res) {
+			self.$state.go('plan.caseDetail', { contactId: res.Data.ID});
+		})
+	}
+
+	gotoDetail(plan) {
+		this.$state.go('plan.caseDetail', { contactId: plan });
+	}
+
+	pageChanged () {
+		console.log('Page changed to: ' + this.filter.PageId);
+		this.getSearchInfo(this.filter);
+	};
+
+	chooseStatus(status, key) {
+		if (this.statusArray.indexOf(status) == -1) {
+			this.statusArray.push(status);
+		}
+		if (this.statusKeyArray.indexOf(key) == -1) {
+			this.statusKeyArray.push(key);
+		}
+
+		this.statusName = this.statusArray.toString();
+		this.filter.Status = this.statusKeyArray.toString();
+	}
+
+	actionClick(e, actionName) {
+		e.stopPropagation();
+		console.log(actionName)
+	}
+}
+CaseListController.$inject = ["CaseService","CreateModal", "$http", "$state"];

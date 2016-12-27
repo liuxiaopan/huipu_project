@@ -1,0 +1,149 @@
+<div class="modal-header">
+  <a ng-click="$ctrl.cancel()" type="button" class="btn close">×</a>
+  <h4 class="modal-title" id="modal-title">{{$ctrl.items.title}}</h4>
+</div>
+<div class="modal-body container-fluid nova-new-task">
+  <form class="form-horizontal" role="form">
+    <div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1">
+      <div class="row">
+
+        <div class="form-group form-group-sm">
+          <label for="planName" class="col-md-5 control-label">Name:</label>
+
+          <div class="col-md-6">
+            <input class="form-control" id="planName" ng-model="$ctrl.addNewTaskInfo.Name"
+                   placeholder="task name" ng-disabled="isDisabled"/>
+          </div>
+        </div>
+        <div class="form-group form-group-sm">
+          <label for="planDescription"
+                 class="col-md-5 control-label">Description:</label>
+
+          <div class="col-md-6">
+                        <textarea class="form-control" ng-disabled="isDisabled"
+                                  ng-model="$ctrl.addNewTaskInfo.Description" id="planDescription"></textarea>
+          </div>
+
+        </div>
+        <div class="form-group form-group-sm">
+          <label for="touchType" class="col-md-5 control-label">Touch Type：</label>
+
+          <div class="col-md-6">
+            <input class="form-control" id="touchType"
+                   ng-model="$ctrl.addNewTaskInfo.TouchType"
+                   placeholder="task name" ng-disabled="isDisabled"/>
+          </div>
+
+        </div>
+        <div class="form-group form-group-sm">
+          <label for="startTime" class="col-md-5 control-label">StartTime:</label>
+
+          <div class="col-md-6">
+            <input type="date" class="form-control" ng-disabled="isDisabled"
+                   id="startTime"
+                   value="2016-01-01"
+                   ng-model="$ctrl.addNewTaskInfo.StartTime"/>
+          </div>
+        </div>
+        <div class="form-group form-group-sm">
+          <label for="endTime" class="col-md-5 control-label">EndTime：</label>
+
+          <div class="col-md-6">
+            <input class="form-control" id="endTime" type="date"
+                   value="2016-12-31"
+                   ng-model="$ctrl.addNewTaskInfo.EndTime"
+                   ng-disabled="isDisabled"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-7 col-md-offset-0 col-sm-10 col-sm-offset-1 nova-detail-plan-right-panel">
+      <div class="row">
+        <div class="form-group form-group-sm">
+          <label class="col-md-5 control-label">PlanId:</label>
+          <div class="col-md-4">
+            <input class="form-control"
+                   ng-model="$ctrl.addNewTaskInfo.PlanId"
+                   placeholder="PlanId" ng-disabled="isDisabled"/>
+          </div>
+          <div class="col-md-3">
+            <button class="btn btn-primary btn-sm nova-change"
+                    ng-click="$ctrl.openChangePlanModal()" data-toggle="modal"
+                    data-target="#myModal">Change
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <div class="form-group form-group-sm">
+        <label class="col-md-5 control-label">PlanName:</label>
+        <div class="col-md-4">
+          <p class="form-control-static">{{$ctrl.addNewTaskInfo.PlanName}}</p>
+        </div>
+      </div>
+
+      <div class="form-group form-group-sm">
+        <label class="col-md-5 control-label">Status:</label>
+        <div class="col-md-4">
+          <p class="form-control-static">{{$ctrl.addNewTaskInfo.Status}}</p>
+        </div>
+      </div>
+      <div class="form-group form-group-sm">
+        <label class="col-md-5 control-label">Target:</label>
+        <div class="col-md-4">
+          <p class="form-control-static">{{$ctrl.addNewTaskInfo.Target}}</p>
+        </div>
+      </div>
+      <div class="form-group form-group-sm">
+        <label class="col-md-5 control-label">TestingSiteId:</label>
+        <div class="col-md-4">
+          <p class="form-control-static">{{$ctrl.addNewTaskInfo.TestingSiteId}}</p>
+        </div>
+      </div>
+      <div class="form-group form-group-sm">
+        <label class="col-md-5 control-label">TestingLead:</label>
+        <div class="col-md-4">
+          <p class="form-control-static">{{$ctrl.addNewTaskInfo.TestLead}}</p>
+        </div>
+      </div>
+      <div class="form-group form-group-sm">
+        <label for="keyWord" class="col-md-5 control-label"> Key Word:</label>
+
+        <div class="col-md-6">
+          <input class="form-control" id="keyWord"
+                 ng-model="$ctrl.addNewTaskInfo.Keyword"
+                 placeholder="Key Word" ng-disabled="isDisabled"/>
+        </div>
+      </div>
+      <div class="form-group form-group-sm">
+        <label for="taskTotalOnduty" class="col-md-5 control-label">
+          Task_total_onduty:</label>
+
+        <div class="col-md-6">
+          <input class="form-control" id="taskTotalOnduty"
+                 ng-model="$ctrl.addNewTaskInfo.task_total_onduty"
+                 placeholder="Task total onduty" ng-disabled="isDisabled"/>
+        </div>
+      </div>
+      <div class="form-group form-group-sm">
+        <label for="taskTotalOndutyNo" class="col-md-5 control-label">
+          Task_total_onduty_nobody:</label>
+
+        <div class="col-md-6">
+          <input class="form-control" id="taskTotalOndutyNo"
+                 ng-model="$ctrl.addNewTaskInfo.task_total_onduty_nobody"
+                 placeholder="Task total onduty nobody" ng-disabled="isDisabled"/>
+        </div>
+      </div>
+
+    </div>
+
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Close</button>
+  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Save</button>
+
+</div>

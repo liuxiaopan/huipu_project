@@ -1,0 +1,44 @@
+<div class="modal-header" style="background-color: #337ab7;color: #fff;">
+  <button ng-click="$ctrl.cancel()" type="button" class="close">×</button>
+  <h4 class="modal-title" id="modal-title">Change {{$ctrl.items}}</h4>
+</div>
+
+<div class="modal-body">
+  <table class="table table-bordered">
+    <tr>
+      <th>*</th>
+      <th>Name</th>
+      <th>Real Name</th>
+      <th>Category</th>
+    </tr>
+    <tr ng-repeat="user in $ctrl.users">
+      <td>
+        <input type="radio" name="user.Name" ng-click="$ctrl.radioCheck(user.ID)" />
+      </td>
+      <td>{{user.Name}}</td>
+      <td>{{user.RealName}}</td>
+      <td>{{user.CategoryName}}</td>
+    </tr>
+  </table>
+
+  <div class="nova-pagination">
+    <ul uib-pagination
+        total-items="$ctrl.users.totalItems"
+        ng-model="$ctrl.postInfo.PageId"
+        force-ellipses="'3'"
+        boundary-link-numbers="true"
+        max-size="$ctrl.maxSize"
+        rotate="true"
+        ng-change="$ctrl.pageChanged()"
+        style="margin-top: -5px; margin-bottom: -5px;"
+        >
+    </ul>
+  </div>
+
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Close</button>
+  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Save</button>
+
+</div>

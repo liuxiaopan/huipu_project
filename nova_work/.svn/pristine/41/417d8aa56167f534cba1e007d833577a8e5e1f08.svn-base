@@ -1,0 +1,81 @@
+//
+export default class PlanService{
+	constructor($http, $q){
+		this.$http = $http;
+		this.$q = $q;
+		this.postCfg = {
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			transformRequest: function (data) {
+				return $.param(data);
+			}
+		};
+	}
+
+	addPlan(info) {
+		var deferred = this.$q.defer();
+
+		this.$http.post('http://172.17.5.55:9001/api/PlanAPI/AddPlan', info, this.postCfg).success(function(res){
+			return deferred.resolve(res);
+		});
+
+		return deferred.promise;
+	}
+
+
+	searchPlans(filter, callback) {
+		console.log(filter)
+		var deferred = this.$q.defer();
+		this.$http.post('http://172.17.5.55:9001/api/PlanAPI/Search', filter, this.postCfg).success(function(res){
+			console.log(res)
+			callback.onSuccess(res)
+		});
+		return deferred.promise;
+	}
+
+	//The services of actions
+
+	editPlan(planId) {
+		var deferred = this.$q.defer();
+		this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Edit?planId=' + planId).success(function(res){
+			return deferred.resolve(res);
+		});
+		return deferred.promise;
+	}
+	submitPlan(planId) {
+		var deferred = this.$q.defer();
+		this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Submit?planId=' + planId).success(function(res){
+			return deferred.resolve(res);
+		});
+		return deferred.promise;
+	}
+	rejectPlan(planId) {
+		var deferred = this.$q.defer();
+		this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Reject?planId=' + planId).success(function(res){
+			return deferred.resolve(res);
+		});
+		return deferred.promise;
+	}
+	approvePlan(planId) {
+		var deferred = this.$q.defer();
+		this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Approve?planId=' + planId).success(function(res){
+			return deferred.resolve(res);
+		});
+		return deferred.promise;
+	}
+	publishPlan(planId) {
+		var deferred = this.$q.defer();
+		this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Publish?planId=' + planId).success(function(res){
+			return deferred.resolve(res);
+		});
+		return deferred.promise;
+	}
+	revokePlan(planId) {
+		var deferred = this.$q.defer();
+		this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Revoke?planId=' + planId).success(function(res){
+			return deferred.resolve(res);
+		});
+		return deferred.promise;
+	}
+
+}
+PlanService.$inject = ["$http", "$q"];

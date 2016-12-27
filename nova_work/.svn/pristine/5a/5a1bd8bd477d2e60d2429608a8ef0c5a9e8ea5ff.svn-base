@@ -1,0 +1,74 @@
+<div class="taskMatrix container-fluid nova-container-fluid">
+    <div class="navbar nova-navbar-default">
+        <div class="container-fluid nova-container-fluid">
+            <div class="col-md set-btn">
+                <button class="btn btn-primary" ng-click="$ctrl.setNpParams()">setNP</button>
+            </div>
+            <div class="col-md set-btn">
+                <button class="btn btn-primary" ng-click="$ctrl.setNsParams()">setNS</button>
+            </div>
+            <div class="col-md set-btn">
+                <button class="btn btn-primary" ng-click="$ctrl.setNormalParams()">setNormal</button>
+            </div>
+            <div class="col-md set-btn">
+                <button class="btn btn-primary">setAssigenee</button>
+            </div>
+            <div class="col-md">
+                <div >
+                    <label class="nova-level" style="line-height: 30px;">Level:</label>
+                    <select class="form-control nova-select" ng-init="$ctrl.selectedName=1" ng-model="$ctrl.selectedName" ng-options="selectedName for selectedName in $ctrl.selects"></select>
+                </div>
+            </div>
+            <div class="col-md">
+                <button class="btn btn-primary">addInstance</button>
+            </div>
+            <div class="col-md">
+                <button class="btn btn-primary">addComponent</button>
+            </div>
+            <div class="col-md">
+                <button class="btn btn-primary">deleteComponent</button>
+            </div>
+            <div class="col-md">
+                <button class="btn btn-primary">save</button>
+            </div>
+        </div>
+    </div>
+    <div class="nova-box">
+        <table class="table table-bordered nova-task-table  nova-task-layout">
+            <thead class="fixedHeader">
+            <tr class="alternateRow">
+                <td>
+                    <ul class="nova-task-ul">
+                        <li>
+                            <span>task1</span>
+                        </li>
+                        <li>
+                            <span>plan1</span><br/>
+                            <button class="btn btn-primary nova-change-btn">change</button>
+                        </li>
+                    </ul>
+                </td>
+                <td >
+                    <!-- instance directive-->
+                    <table class="table table-bordered nova-task-table">
+                        <tr>
+                            <td ng-repeat="instance in $ctrl.instances">
+                                <instance-settings instance="instance" selected-level="$ctrl.selectedName"></instance-settings>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </thead>
+            <!-- sections-cases directive-->
+            <tbody class="scrollContent">
+            <tr>
+              <table class="table">
+
+              </table>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

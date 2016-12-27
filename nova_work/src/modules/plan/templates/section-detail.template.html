@@ -1,0 +1,313 @@
+<div class="container-fluid">
+  <div class="row-fluid page-header">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="nova-title">
+          <div class="nova-image"></div>
+        </div>
+      </div>
+    </div>
+    <div class="nova-content">
+      <div class="tabbable">
+        <ul id="myTab" class="nav nav-tabs">
+          <li class="active" ng-class="{'active': $ctrl.current === 0}" ng-click="$ctrl.show(0)">
+            <a ng-click="$ctrl.getSectionInfo()" href="" data-toggle="tab">Section</a>
+          </li>
+          <li ng-class="{'active': $ctrl.current === 1}" ng-click="$ctrl.show(1)">
+            <a ng-click="$ctrl.getCasesInfo()" href="">Cases</a>
+          </li>
+          <li ng-class="{'active': $ctrl.current === 2}" ng-click="$ctrl.show(2)">
+            <a ng-click="$ctrl.getFamilyInfo()" href="" data-toggle="tab">Family</a>
+          </li>
+          <li ng-class="{'active': $ctrl.current === 3}" ng-click="$ctrl.show(3)">
+            <a ng-click="$ctrl.getPlansInfo()" href="" data-toggle="tab">Plans</a>
+          </li>
+          <li ng-class="{'active': $ctrl.current === 4}" ng-click="$ctrl.show(4)">
+            <a ng-click="$ctrl.getTreeViewInfo()" href="" data-toggle="tab">TreeView</a>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content nova-content-tab" ui-view="content">
+          <div class="tab-pane fade in " ng-class="{'active': $ctrl.current === 0}"
+               id="Plan">
+            <div class="row">
+              <form class="form-horizontal" role="form">
+                <div class="col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                  <div class="row">
+
+                    <div class="form-group form-group-sm">
+                      <label for="planId" class="col-md-3 control-label">ID</label>
+
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" ng-disabled="isDisabled" id="planId"
+                               placeholder="plan ID" ng-model="$ctrl.sectionInfo.ID">
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label for="planName" class="col-md-3 control-label">Name</label>
+
+                      <div class="col-md-6">
+                        <input class="form-control" id="planName" ng-model="$ctrl.sectionInfo.Name"
+                               placeholder="planName" ng-disabled="isDisabled"/>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label for="planDescription" class="col-md-3 control-label">Description</label>
+
+                      <div class="col-md-6">
+                        <textarea class="form-control" ng-disabled="isDisabled"
+                                  ng-model="$ctrl.sectionInfo.Description" id="planDescription"></textarea>
+                      </div>
+
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label for="planChangeLog" class="col-md-3 control-label">Change Log</label>
+
+                      <div class="col-md-6">
+                        <textarea class="form-control" ng-disabled="isDisabled" ng-model="$ctrl.sectionInfo.ChangeLog" id="planChangeLog"></textarea>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 nova-detail-plan-right-panel">
+                  <div class="row">
+
+                    <div class="form-group form-group-sm">
+                      <label class="col-md-3 control-label">Status:</label>
+                      <div class="col-md-4">
+                        <p class="form-control-static">{{$ctrl.statusList[$ctrl.sectionInfo.Status]}}</p>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label class="col-md-3 control-label">Author:</label>
+                      <div class="col-md-4">
+                        <p class="form-control-static">{{$ctrl.sectionInfo.AuthorName}}</p>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label class="col-md-3 control-label">Owner:</label>
+                      <div class="col-md-4">
+                        <p class="form-control-static">{{$ctrl.sectionInfo.OwnerName}}</p>
+                      </div>
+                      <div class="col-md-3">
+                        <button class="btn btn-primary btn-sm nova-change" ng-click="$ctrl.openModal('Owner')">Change</button>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label class="col-md-3 control-label">Editor:</label>
+                      <div class="col-md-4">
+                        <p class="form-control-static">{{$ctrl.sectionInfo.EditorName}}</p>
+                      </div>
+                      <div class="col-md-3">
+                        <button class="btn btn-primary btn-sm nova-change" ng-click="$ctrl.openModal('Editor')">Change</button>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label class="col-md-3 control-label">Category:</label>
+                      <div class="col-md-4">
+                        <p class="form-control-static">{{$ctrl.sectionInfo.CategoryName}}</p>
+                      </div>
+                      <div class="col-md-3">
+                        <button class="btn btn-primary btn-sm nova-change" ng-click="$ctrl.openModal('Category')">Change</button>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label class="col-md-3 control-label">Update Time:</label>
+                      <div class="col-md-4">
+                        <p class="form-control-static">{{$ctrl.sectionInfo.CreateTime}}</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </form>
+              <div class="col-md-12 col-sm-12">
+                <div class="nova-detail-plan-btn-group">
+                  <button
+                      ng-repeat="btn in $ctrl.sectionInfo.Permissions"
+                      type="button" class="btn btn-primary btn-sm"
+                      ng-click="$ctrl.btnClick(btn)">
+                    {{btn}}
+                  </button>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade in" id="Sections" ng-class="{'active': $ctrl.current === 1}"
+               ng-click="$ctrl.show(1)">
+            <div class="table-responsive">
+
+              <div class="nova-plan-create-btn-container">
+                <button type="button" class="btn btn-success btn-sm" ng-click="$ctrl.openCreateCaseModal()">
+                  <span class="glyphicon glyphicon-plus-sign"></span> Create Case
+                </button>
+                <button type="button" class="btn btn-info btn-sm" >
+                  <span class="glyphicon glyphicon-plus-sign"></span> Append Cases
+                </button>
+              </div>
+
+              <table class="table table-bordered">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Category</th>
+                  <th>Status</th>
+                  <th>Action</th>
+
+                </tr>
+                <tr ng-repeat="model in $ctrl.cases">
+                  <td>{{model.ID}}</td>
+                  <td>{{model.Name}}</td>
+                  <td>{{model.Description}}</td>
+                  <td>{{model.CategoryName}}</td>
+                  <td>{{$ctrl.statusList[model.Status]}}</td>
+                  <td>{{model.Permissions}}</td>
+                </tr>
+
+              </table>
+
+              <div class="nova-pagination">
+                <ul uib-pagination
+                    total-items="$ctrl.cases.totalItems"
+                    ng-model="$ctrl.caseRequest.PageId"
+                    force-ellipses="'3'"
+                    boundary-link-numbers="true"
+                    max-size="$ctrl.maxSize"
+                    rotate="true"
+                    ng-change="$ctrl.casePageChanged()"
+                    >
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="tab-pane fade in" id="Family" ng-class="{'active': $ctrl.current === 2}"
+               ng-click="$ctrl.show(2)">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Category</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+                <tr ng-repeat="model in $ctrl.family">
+                  <td>{{model.ID}}</td>
+                  <td>{{model.Name}}</td>
+                  <td>{{model.Description}}</td>
+                  <td>{{model.CategoryName}}</td>
+                  <td>{{$ctrl.statusList[model.Status]}}</td>
+                  <td>{{model.Permissions}}</td>
+                </tr>
+
+              </table>
+
+              <div class="nova-pagination">
+                <ul uib-pagination
+                    total-items="$ctrl.family.totalItems"
+                    ng-model="$ctrl.familyRequest.PageId"
+                    force-ellipses="'3'"
+                    boundary-link-numbers="true"
+                    max-size="$ctrl.maxSize"
+                    rotate="true"
+                    ng-change="$ctrl.familyPageChanged()"
+                    >
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="tab-pane fade in" ng-class="{'active': $ctrl.current === 3}" ng-click="$ctrl.show(3)"
+               id="Tasks">
+
+
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Category</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+                <tr ng-repeat="model in $ctrl.plans">
+                  <td>{{model.ID}}</td>
+                  <td>{{model.Name}}</td>
+                  <td>{{model.Description}}</td>
+                  <td>{{model.CategoryName}}</td>
+                  <td>{{$ctrl.statusList[model.Status]}}</td>
+                  <td>{{model.Permissions}}</td>
+                </tr>
+
+              </table>
+
+              <div class="nova-pagination">
+                <ul uib-pagination
+                    total-items="$ctrl.plans.totalItems"
+                    ng-model="$ctrl.planRequest.PageId"
+                    force-ellipses="'3'"
+                    boundary-link-numbers="true"
+                    max-size="$ctrl.maxSize"
+                    rotate="true"
+                    ng-change="$ctrl.planPageChanged()"
+                    >
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade in" ng-class="{'active': $ctrl.current === 4}" ng-click="$ctrl.show(4)"
+               id="ChangeLog">
+            <div class="nova-tree-view-container">
+              <div class="row">
+                <div class="col-md-5">
+                  <!--<ul class="list-group">-->
+                  <!--<li class="list-group-item node-tree"></li>-->
+                  <!--</ul>-->
+
+                  <div class="nova-tree-view-first-level list-group-item">
+                    <span class="badge">
+                      <span ng-click="$ctrl.addTreeItem()" class="glyphicon glyphicon-plus"></span>
+                    </span>
+                    <span class="nova-tree-view-planName">{{$ctrl.treeViewData.Name}}</span>
+                    <ol class="nova-tree-view-section list-group">
+                      <li class="list-group-item node-tree" ng-repeat="secondLevel in $ctrl.treeViewData.Children">
+                        <span class="badge">
+                          <span ng-click="$ctrl.addTreeItem(secondLevel)" class="glyphicon glyphicon-plus"></span>
+                        </span>
+                        <span class="badge">
+                          <span ng-click="$ctrl.deleteTreeItem($index, $ctrl.treeViewData.Children)" class="glyphicon glyphicon-remove"></span>
+                        </span>
+                        <span ng-class='{"nova-tree-view-sectionName": secondLevel.Children}'>{{secondLevel.Name}}</span>
+                        <ol class="nova-tree-view-case list-group" ng-show="secondLevel.Children">
+                          <li class="list-group-item node-tree" ng-repeat="thirdLevel in secondLevel.Children">
+                            <span class="badge">
+                              <span ng-click="$ctrl.deleteTreeItem($index, secondLevel.Children)" class="glyphicon glyphicon-remove"></span>
+                            </span>
+                            {{thirdLevel.Name}}
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="nova-footer container">
+    <div class="btn-group nova-btn-group" ng-repeat="btnText in btnsText">
+      <button class="btn btn-primary nova-change" ng-click="novaBtnCtrl(btnText)">{{btnText}}</button>
+
+    </div>
+  </footer>
+</div>
+</div>

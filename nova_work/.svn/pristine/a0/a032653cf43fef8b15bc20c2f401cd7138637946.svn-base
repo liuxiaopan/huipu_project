@@ -1,0 +1,117 @@
+require("../template/task-matrix.template.css");
+
+export default class TaskMatrixController{
+    constructor(TaskService,$rootScope) {
+        this.$rootScope=$rootScope;
+        this.TaskService = TaskService;
+        this.selects=[1,2,3,4,5];
+        this.getInstanceInfo();
+        this.setParam = {
+            TaskId: "",
+            SectionPackageIds:"",
+            CasePackageIds:""
+        };
+      this.paramArray = {
+        SectionPackageIds: [],
+        CasePackageIds: []
+      }
+      this.counterAdd = 0;
+      this.counterMinus = 0;
+    }
+
+    getInstanceInfo(){
+        //获取matrixData
+        var self=this;
+        self.TaskService.getInstances().then(function(res){
+          self.tasInfos = res.Task;
+          self.planInfos = res.Plan;
+            self.instances= res.InstanceList;
+          self.sectionTree = res.SectionTree;
+        });
+    }
+
+  showCaseCtrl(section) {
+    if (section.showCase) {
+      section.showCase = false;
+    } else {
+      section.showCase = true;
+    }
+  }
+
+//control the row selection and if the row control checkbox is selected,then push
+// the corresponding type ID of obj to an array
+  rowSelectCtrl(obj) {
+    if (!obj.counterAdd) {
+      obj.counterAdd = obj.Cells.length;
+      this.getIdArray(obj);
+    } else {
+      obj.counterAdd = 0;
+      obj.counterMinus = obj.Cells.length;
+    }
+  }
+
+  getIdArray(obj) {
+    if (obj.Type == "S") {
+      for (var i = 0; i < obj.Cells.length; i++) {
+        this.paramArray.SectionPackageIds.push(obj.Cells[i].ID);
+      }
+    } else {
+      for (var i = 0; i < obj.Cells.length; i++) {
+        this.paramArray.CasePackageIds.push(obj.Cells[i].ID);
+      }
+    }
+    console.log(this.paramArray);
+  }
+
+  unitCtrl(obj) {
+    if (obj.counterAdd == obj.Cells.length) {
+      obj.counterAdd--;
+
+      if (obj.Type == "S") {
+        var index = this.paramArray.SectionPackageIds.indexOf(obj.ID);
+        this.paramArray.SectionPackageIds.splice(index, 1);
+      }
+      if (obj.Type == "C") {
+        var index = this.paramArray.CasePackageIds.indexOf(obj.ID);
+        this.paramArray.CasePackageIds.splice(index, 1);
+      }
+    } else {
+      obj.counterMinus--;
+      if (this.counterMinus == 0) {
+        obj.ctrl = false;
+      }
+      if (obj.Type == "S") {
+        this.paramArray.SectionPackageIds.push(obj.ID);
+      }
+      if (obj.Type == "C") {
+        this.paramArray.CasePackageIds.push(obj.ID);
+      }
+    }
+    console.log(this.paramArray);
+  }
+    setNpParams() {
+        var self = this;
+        self.TaskService.setNp(this.setParam, {
+            onSuccess: function (res) {
+            }
+        });
+    }
+
+    setNsParams() {
+        var self = this;
+        self.TaskService.setNs(this.setParam, {
+            onSuccess: function (res) {
+            }
+        });
+    }
+
+    setNormalParams() {
+        var self = this;
+        self.TaskService.setNormal(this.setParam, {
+            onSuccess: function (res) {
+            }
+        });
+    }
+
+}
+    TaskMatrixController.$inject = ["TaskService","$rootScope"];

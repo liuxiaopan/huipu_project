@@ -1,0 +1,197 @@
+/**
+ * Created by LiuPan on 2016/10/20.
+ */
+export default class PlanDetailService{
+    constructor($http, $q){
+        this.$http = $http;
+        this.$q = $q;
+        this.postCfg = {
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          transformRequest: function (data) {
+            return $.param(data);
+          }
+        };
+    }
+
+    getPlan(contactId){
+      var deferred = this.$q.defer();
+
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/GetPlan?planId=' + contactId).success(function(res){
+          console.log(res);
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+    getPlanOwner(){
+      var deferred = this.$q.defer();
+      this.$http.get("/src/modules/Jsons/owners.json").success(function(res){
+        return deferred.resolve(res.Data.Models);
+      });
+
+      return deferred.promise;
+    }
+    getSections(data) {
+        var deferred = this.$q.defer();
+
+      this.$http.post('http://172.17.5.55:9001/api/PlanAPI/GetSections', data, this.postCfg).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+        return deferred.promise;
+    }
+    getFamily(data) {
+        var deferred = this.$q.defer();
+
+      this.$http.post('http://172.17.5.55:9001/api/PlanAPI/GetFamily', data, this.postCfg).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+        //this.$http.get("/src/modules/Jsons/Family.json").success(function(res){
+        //    return deferred.resolve(res.Data.Models);
+        //});
+
+        return deferred.promise;
+    }
+    getTasks(data) {
+        var deferred = this.$q.defer();
+        this.$http.post("http://172.17.5.55:9001/api/PlanAPI/GetTasks", data, this.postCfg).success(function(res){
+            return deferred.resolve(res.Data);
+        });
+
+        return deferred.promise;
+    }
+
+    getTreeView(){
+      var deferred = this.$q.defer();
+      //this.$http.get("/src/modules/Jsons/treeview.json").success(function(res){
+      //    return deferred.resolve(res);
+      //});
+      var planId = '160100010001';
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/GetPlanTree?planId=' + planId).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+
+    submitPlan(planId) {
+      var deferred = this.$q.defer();
+
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Submit?planId=' + planId).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+    approvePlan(planId) {
+      var deferred = this.$q.defer();
+
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Approve?planId=' + planId).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+    publishPlan(planId) {
+      var deferred = this.$q.defer();
+
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Publish?planId=' + planId).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+    rejectPlan(planId) {
+      var deferred = this.$q.defer();
+
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Reject?planId=' + planId).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+    revokePlan(planId) {
+      var deferred = this.$q.defer();
+
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Revoke?planId=' + planId).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+
+    upgradePlan(planId) {
+      var deferred = this.$q.defer();
+      //this.$http.get("/src/modules/Jsons/copyPlan.json").success(function(res){
+      //  return deferred.resolve(res.Data);
+      //});
+
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Upgrade?planId=' + planId).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+    deletePlan(planId) {
+      console.log(planId)
+      var deferred = this.$q.defer();
+
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Delete?planId=' + planId).success(function(){
+        return deferred.resolve();
+      });
+      //this.$http.get("/src/modules/Jsons/copyPlan.json").success(function(){
+      //  return deferred.resolve();
+      //});
+
+      return deferred.promise;
+    }
+    copyPlan(planId) {
+      console.log(planId);
+      var deferred = this.$q.defer();
+
+      //this.$http.get("/src/modules/Jsons/copyPlan.json").success(function(res){
+      //  return deferred.resolve(res.Data);
+      //});
+
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/Copy?planId=' + planId).success(function(res){
+        return deferred.resolve(res.Data);
+      });
+
+      return deferred.promise;
+    }
+
+    //service for change owner, editor, apporover, category
+
+    changeOwner(planId, userId) {
+      var deferred = this.$q.defer();
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/ChangeOwner?planId=' + planId + '&userid=' + userId)
+        .success(function(res){
+          return deferred.resolve(res.Data);
+      });
+      return deferred.promise;
+    }
+    changeEditor(planId, userId) {
+      var deferred = this.$q.defer();
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/ChangeEditor?planId=' + planId + '&userid=' + userId)
+        .success(function(res){
+          return deferred.resolve(res.Data);
+        });
+      return deferred.promise;
+    }
+    changeApprover(planId, userId) {
+      var deferred = this.$q.defer();
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/ChangeApprover?planId=' + planId + '&userid=' + userId)
+        .success(function(res){
+          return deferred.resolve(res.Data);
+        });
+      return deferred.promise;
+    }
+    changeCategory(planId, categoryId) {
+      var deferred = this.$q.defer();
+      this.$http.get('http://172.17.5.55:9001/api/PlanAPI/ChangeCategory?planId=' + planId + '&categoryId=' + categoryId)
+        .success(function(res){
+          return deferred.resolve(res.Data);
+        });
+      return deferred.promise;
+    }
+}
+PlanDetailService.$inject = ["$http", "$q"];

@@ -1,0 +1,121 @@
+<div class="taskMatrix container-fluid nova-container-fluid">
+    <div class="navbar nova-navbar-default">
+        <div class="container-fluid nova-container-fluid">
+            <div class="col-md set-btn">
+                <button class="btn btn-primary" ng-click="$ctrl.setNpParams()">setNP</button>
+            </div>
+            <div class="col-md set-btn">
+                <button class="btn btn-primary" ng-click="$ctrl.setNsParams()">setNS</button>
+            </div>
+            <div class="col-md set-btn">
+                <button class="btn btn-primary" ng-click="$ctrl.setNormalParams()">setNormal</button>
+            </div>
+            <div class="col-md set-btn">
+                <button class="btn btn-primary">setAssigenee</button>
+            </div>
+            <div class="col-md">
+                <div >
+                    <label class="nova-level" style="line-height: 30px;">Level:</label>
+                    <select class="form-control nova-select" ng-init="$ctrl.selectedName=1" ng-model="$ctrl.selectedName" ng-options="selectedName for selectedName in $ctrl.selects"></select>
+                </div>
+            </div>
+            <div class="col-md">
+                <button class="btn btn-primary">addInstance</button>
+            </div>
+            <div class="col-md">
+                <button class="btn btn-primary">addComponent</button>
+            </div>
+            <div class="col-md">
+                <button class="btn btn-primary">deleteComponent</button>
+            </div>
+            <div class="col-md">
+                <button class="btn btn-primary">save</button>
+            </div>
+        </div>
+    </div>
+    <div class="nova-box">
+        <table class="table table-bordered nova-task-table  nova-task-layout">
+            <thead class="fixedHeader">
+            <tr class="alternateRow">
+                <td class="th-secName" style="border: 0;">
+                    <ul class="nova-task-ul">
+                        <li>
+                            <span>{{$ctrl.tasInfos.Name}}</span>
+                        </li>
+                        <li>
+                            <span>{{$ctrl.planInfos.Name}}</span><br/>
+                            <button class="btn btn-primary nova-change-btn">change</button>
+                        </li>
+                    </ul>
+                </td>
+                <td class="row-td" style="border-bottom: 0px;">
+                    <!-- instance directive-->
+                    <table class="table table-bordered nova-task-table">
+                        <tr>
+                            <td ng-repeat="instance in $ctrl.instances" class="td-secPkg">
+                                <instance-settings instance="instance" selected-level="$ctrl.selectedName"></instance-settings>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </thead>
+            <!-- sections-cases directive-->
+            <tbody class="scrollContent">
+            <tr ng-repeat="section in $ctrl.sectionTree">
+                <td class="row-td">
+                    <table class="table table-bordered nova-task-table">
+                        <tr>
+                            <td class="th-secName">
+                                <span class="glyphicon glyphicon-plus" ng-click="$ctrl.showCaseCtrl(section)"
+                                      ng-show="!section.showCase"></span>
+                                <span class="glyphicon glyphicon-minus" ng-click="$ctrl.showCaseCtrl(section)"
+                                      ng-show="section.showCase"></span>
+                                <label for="sectionName">{{section.Name}}</label>
+                              <input type="checkbox" id="sectionName"
+                                     ng-click="$ctrl.rowSelectCtrl(section,section.Cells)"
+                                     ng-checked="section.rowCtrl"/>
+                            </td>
+                            <td class="td-secPkg" ng-repeat="secPkg in section.Cells">
+                              <div class="secPkgChk"><input type="checkbox" id="secPkg" ng-checked="secPkg.ctrl"
+                                                            ng-click="$ctrl.unitCtrl(section,section.Cells,secPkg)"
+                                                            ng-checked="secPkg.ctrl"/></div>
+                                <div class="secPkgInfo">
+                                    <span>Status:</span>
+                                    <span>{{secPkg.Status}}</span>
+                                </div>
+                                <div class="secPkgInfo">
+                                    <span>Assignee:</span>
+                                    <span>{{secPkg.AssigneeName}}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr ng-show="section.showCase" ng-repeat="case in section.Children">
+                            <td class="th-secName">
+                                <label for="caseName">{{case.Name}}</label>
+                              <input type="checkbox" id="caseName" ng-click="$ctrl.rowSelectCtrl(case,case.Cells)"
+                                     ng-checked="case.rowCtrl"/>
+
+                            </td>
+                            <td class="td-secPkg" ng-repeat="casePkg in case.Cells">
+                              <div class="secPkgChk"><input type="checkbox" id="casePkg" ng-checked="casePkg.ctrl"
+                                                            ng-click="$ctrl.unitCtrl(case,case.Cells,casePkg)"/>
+                                </div>
+                                <div class="secPkgInfo">
+                                    <span>Status:</span>
+                                    <span>{{casePkg.Status}}</span>
+                                </div>
+                                <div class="secPkgInfo">
+                                    <span>Assignee:</span>
+                                    <span>{{casePkg.AssigneeName}}</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

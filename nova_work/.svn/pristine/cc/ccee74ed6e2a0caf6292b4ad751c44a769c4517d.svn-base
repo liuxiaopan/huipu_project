@@ -1,0 +1,262 @@
+
+h5{
+    font-weight: 600;
+}
+.nova-container-fluid{
+    background-color: #ffffff;
+}
+.nova-row .form-control{
+    height: 17px;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.taskMatrix .nova-navbar-default {
+    background-color: #ffffff;
+    padding-left: 14%;
+    margin-bottom: 0;
+}
+.nova-container-fluid{
+    line-height: 50px;
+}
+.nova-container-fluid .col-md{
+    float: left;
+    padding: 0 6px;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.nova-row{
+    padding-left: 20px;
+    height: 17px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.nova-left-status .nova-level{
+    width: 24%;
+    margin-right: 2%;
+}
+.nova-select{
+    display: inline-block;
+    /*width: 36%;*/
+    /*margin-top: 10px;*/
+}
+.nova-checkbox{
+    float: left;
+    width: 5%;
+    height: 20px;
+}
+.nova-instance-name{
+    display: inline-block;
+    height: 17px;
+    line-height: 17px;
+    padding: 0 10px;
+    width: 23%;
+    float: left;
+}
+.nova-input{
+    width: 31%;
+    float: left;
+    height: 17px;
+    margin-top: 0px;
+}
+.nova-glyphicon{
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid #204d74;
+    margin: 0px 5px;
+    background-color: #337ab7;
+    border-radius: 4px;
+    color: #fff;
+}
+.nova-glyphicon:hover{
+    background-color: #286090;
+}
+.nova-task-label{
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    width: 23%;
+}
+.nova-change-btn{
+    height: 17px;
+    line-height: 17px;
+    padding-top: 0;
+    margin-top: 1px;
+    font-size: 12px;
+}
+.nova-component{
+    height: 110px;
+}
+.nova-component-list{
+    float: left;
+    width: 65%;
+}
+.nova-component-list li{
+    padding-left: 30px;
+}
+.nova-component-list li .nova-checkbox{
+    margin-right: 10px;
+    width: 20px;
+}
+.nova-component-ctrl{
+    float: left;
+}
+.nova-component-ctrl button{
+    display: block;
+    margin-bottom: 20px;
+}
+.nova-section-select{
+    display: inline-block;
+    border: none;
+    height: 17px;
+    line-height: 17px;
+    font-size: 12px;
+    padding: 0 5px;
+    box-shadow: none;
+}
+.nova-instance-row{
+    margin-left: 35px;
+}
+.nova-instance-row .nova-input{
+    width: 35%;
+    font-size: 12px;
+    color: #333;
+}
+.container-fluid .nova-task-table tr td{
+    vertical-align: middle;
+}
+
+.taskMatrix .nova-task-ul {
+    width: 109px;
+    padding-left: 0;
+}
+.nova-task-ul li{
+    list-style: none;
+}
+.nova-task-ul li span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.nova-task-ul li .nova-change-btn{
+    padding: 0 5px;
+    height: 20px;
+    line-height: 19px;
+    margin-top: 6px;
+}
+.nova-task-title{
+    font-size: 20px;
+    text-align: center;
+    height: 100px;
+}
+.nova-glyphicon-ctrl, .row-ctrl{display: inline-block;font-size: 12px;}
+
+.nova-glyphicon-ctrl{
+    margin-right: 35px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    background-color: #337ab7;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -15px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.nova-glyphicon-ctrl:hover{
+    background-color:#286090;
+}
+
+.nova-container-fluid .btn-primary{
+    font-size: 12px;
+}
+.nova-container-fluid .set-btn .btn-primary{
+     background-color: #ff9959;
+ }
+.nova-container-fluid .set-btn .btn-primary:hover{
+    background-color: #F52B00;
+}
+.nova-flex-box{
+    overflow: scroll;
+}
+.nova-flex-box .nova-task-layout{
+    table-layout: fixed;
+}
+.nova-flex-box .nova-task-layout tr td:first-child,.nova-flex-box .nova-task-layout tr td:first-child{
+    width:120px;
+}
+thead.fixedHeader tr{
+    display: block;
+    position: relative;
+}
+tbody.scrollContent {
+    display: block;
+    /*height: 262px;*/
+    overflow: auto;
+    width: 100%;
+}
+.nova-task-table{
+    margin-bottom: 0;
+}
+.alternateRow .nova-task-table tr td{
+    padding: 4px;
+}
+
+.taskMatrix .nova-box {
+    width: 99%;
+    height: 383px;
+    overflow-x: auto;
+
+}
+
+.nova-sec-case{
+    font-size: 20px;
+    font-weight: 600;
+}
+.nova-right-checkbox{
+    width: 20%;
+
+    float: left;
+}
+.nova-left-status{
+    width: 80%;
+    float: left;
+}
+.nova-sec-case li{
+    text-align: right;
+}
+
+.secPkgChk {
+    float: left;
+    width: 50px;
+
+}
+
+.secPkgInfo {
+    float: left;
+    width: 250px;
+}
+
+.taskMatrix .row-td {
+    padding: 0;
+}
+
+.taskMatrix .table-bordered > tbody > tr > td {
+    border: none;
+}
+
+.taskMatrix .table-bordered .th-secName {
+    width: 130px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.taskMatrix .row-td .table-bordered .td-secPkg {
+    width: 397px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}

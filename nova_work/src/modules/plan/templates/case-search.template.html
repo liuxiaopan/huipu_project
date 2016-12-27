@@ -1,0 +1,128 @@
+<div class="container-fluid">
+  <div class="nova-content">
+    <div class="col-md">
+      <div id="tree"></div>
+    </div>
+    <div class="col-mdd">
+      <div class="nova-search-ctrl">
+
+        <div class="col-md-ctrl">
+          <label for="id">ID:</label>
+          <input class="form-control input-sm" id="id" placeholder="type ID" ng-model="$ctrl.filter.ID"/>
+        </div>
+        <div class="col-md-ctrl">
+          <label for="name">Name:</label>
+          <input  class="form-control input-sm" id="name" placeholder="type Name" value="name" ng-model="$ctrl.filter.Name"/>
+        </div>
+        <div class="col-md-ctrl" style="width: 38%;">
+          <div class="nova-dropmenu-box">
+            <div class="form-group">
+              <label>Status:</label>
+              <!--<select class="form-control input-sm" ng-model="$ctrl.filter.Status" ng-options="x for x in $ctrl.statusList"></select>-->
+              <div class="input-group">
+                <input ng-model="$ctrl.statusName" style="width: 100%;" type="text" class="form-control">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Status <span class="caret"></span></button>
+                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li ng-repeat="(key,status) in $ctrl.statusList">
+                      <a ng-click="$ctrl.chooseStatus(status, key)">{{status}}</a>
+                    </li>
+                  </ul>
+                </div><!-- /btn-group -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-ctrl">
+          <div class="nova-dropmenu-box">
+            <div class="form-group">
+              <label>Owner:</label>
+              <select class="form-control input-sm" ng-model="$ctrl.filter.OwnerId" ng-options="x for x in $ctrl.ownerList"></select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-ctrl">
+          <div class="nova-dropmenu-box">
+            <div class="form-group">
+              <label>Editor:</label>
+              <select class="form-control input-sm" ng-model="$ctrl.filter.EditorId" ng-options="x for x in $ctrl.editorList"></select>
+            </div>
+          </div>
+        </div>
+
+        <div style="clear: both">
+          <div class="col-md-ctrl">
+            <div class="nova-dropmenu-box">
+              <div class="form-group">
+                <label><input name="novaPlanFilterRadio" ng-checked="$ctrl.filter.DisplayAll" ng-model="$ctrl.filter.DisplayAll" value="false" type="radio"/> Find Last Version</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-ctrl">
+            <div class="nova-dropmenu-box">
+              <div class="form-group">
+                <label><input name="novaPlanFilterRadio" ng-model="$ctrl.filter.DisplayAll" value="true" type="radio"/> Find All Version</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-ctrl">
+            <div class="nova-search-btn-box">
+              <button class="btn btn-primary" id="search" type="button" ng-click="$ctrl.getSearchInfo()">
+                <span class="glyphicon glyphicon-search"></span> Search
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-mdd nova-result">
+      <div class="nova-plan-create-btn-container">
+        <button type="button" class="btn btn-success btn-sm" ng-click="$ctrl.openModal()" >
+          <span class="glyphicon glyphicon-plus-sign"></span> Create Case
+        </button>
+      </div>
+      <table class="table table-bordered" ng-show="$ctrl.resultDidMount">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+        <tr ng-repeat="case in $ctrl.cases" >
+          <td ng-click="$ctrl.gotoDetail(case.ID)"><a style="cursor: pointer;">{{case.DisplayId}}</a></td>
+          <td>{{case.Name}}</td>
+          <td>{{case.Description}}</td>
+          <td>{{case.CategoryName}}</td>
+          <td>{{$ctrl.statusList[case.Status]}}</td>
+          <td>
+                      <span ng-repeat="(k, v) in case.Permissions"
+                            title="{{v}}"
+                            class="glyphicon {{$ctrl.actionList[v]}}"
+                            ng-click="$ctrl.actionClick($event, v)"
+                          ></span>
+          </td>
+        </tr>
+
+      </table>
+
+      <div class="nova-pagination" ng-show="$ctrl.resultDidMount">
+        <ul uib-pagination
+            total-items="$ctrl.totalItems"
+            ng-model="$ctrl.filter.PageId"
+            force-ellipses="'3'"
+            boundary-link-numbers="true"
+            max-size="$ctrl.maxSize"
+            rotate="true"
+            ng-change="$ctrl.pageChanged()"
+            >
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</div>

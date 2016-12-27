@@ -1,0 +1,18 @@
+<div class="menu-tools">
+	<span class="menu-pin glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+</div>
+<ul class="menu-items">
+	<li class="menu-item" ui-sref-active="active" ng-repeat="item in $ctrl.items">
+		<a ui-sref="{{item.routeState}}">
+			<span class="menu-item-icon glyphicon {{item.iconClass}}" aria-hidden="true"></span>
+			<span class="menu-item-title" ng-bind="item.title"></span>
+		</a>
+		<ul class="menu-items">
+			<li class="menu-item" ui-sref-active="active" ng-repeat="childItem in item.children">
+				<a ui-sref="{{childItem.routeState}}">
+					<span class="menu-item-title" ng-bind="childItem.title"></span>
+				</a>
+			</li>
+		</ul>
+	</li>
+</ul>

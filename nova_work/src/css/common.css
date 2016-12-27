@@ -1,0 +1,13 @@
+html,body{height: 100%;}
+
+footer{
+	position: static;
+	display: block;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+a {
+	cursor: pointer;
+}

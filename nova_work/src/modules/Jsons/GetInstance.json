@@ -1,0 +1,15 @@
+{
+  "Status": "OK",
+  "Message": null,
+  "Data": {
+    "ID": 1601000100001000003,
+    "Name": "Instance3",
+    "PlatformId": 1,
+    "HwSku": "sku-1",
+    "HwPhase": "1",
+    "ComponentList": [1,2,3,4,5,6,7,8,9,10],
+    "Components": [],
+    "OS": 0,
+    "OSLang": 0
+  }
+}

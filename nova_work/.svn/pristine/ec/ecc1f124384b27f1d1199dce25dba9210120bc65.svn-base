@@ -1,0 +1,692 @@
+{
+  "Status": "OK",
+  "Message": null,
+  "Data": {
+    "Case": {
+      "ID": 16010000070001,
+      "Name": "Case0",
+      "Description": "Case Description6",
+      "Status": 0,
+      "CategoryId": 0,
+      "KAT": 0,
+      "KUT": 0,
+      "Comments": null,
+      "Keywords": "",
+      "AuthorId": 1,
+      "CreateTime": "0001-01-01T00:00:00",
+      "OwnerId": 1,
+      "EditorId": 0,
+      "ChangeLog": null,
+      "Steps": null,
+      "Attachments": null
+    },
+    "CasePackage": {
+      "ID": 1601000100001001000,
+      "TaskId": 1601000100001,
+      "InstanceId": 1601000100001000000,
+      "SectionId": 16010000070001,
+      "CaseId": 16010001810001,
+      "Status": 0,
+      "KAT": 0,
+      "KUT": 0,
+      "Result": 0,
+      "ComponentList": null,
+      "AssignerId": 1,
+      "AssigneeId": 2,
+      "AssignerName": "zhangsan",
+      "AssigneeName": "lisi"
+    },
+    "StepAndPackageList": [
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      },
+      {
+        "Step": null,
+        "StepPackage": {
+          "ID": null,
+          "CPId": 1601000100001001000,
+          "InstanceId": 1601000100001000000,
+          "StepId": 1601000181000100000,
+          "Result": 0,
+          "TesterId": 0,
+          "NewOBSId": null,
+          "RefOBSId": null
+        }
+      }
+    ]
+  }
+}

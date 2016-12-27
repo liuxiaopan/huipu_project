@@ -1,0 +1,119 @@
+<div class="taskSearch container-fluid">
+    <div class="nova-content">
+        <div class="col-mdd">
+            <div class="nova-search-ctrl">
+                <div class="row">
+                    <div class="col-md-ctrl">
+                        <label for="id">Task Id:</label>
+                        <input class="form-control input-sm" id="id" placeholder="task ID"
+                               ng-model="$ctrl.filter.TaskId"/>
+                    </div>
+                    <div class="col-md-ctrl">
+                        <label for="name">Task Name:</label>
+                        <input class="form-control input-sm" id="name" placeholder="task Name" value="name"
+                               ng-model="$ctrl.filter.TaskName"/>
+                    </div>
+                    <div class="col-md-ctrl">
+                        <div class="nova-dropmenu-box">
+                            <div class="form-group">
+                                <label>Status:</label>
+                                <select class="form-control input-sm" ng-model="$ctrl.filter.Status"
+                                        ng-options="x for x in $ctrl.statusList"></select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-ctrl">
+                        <div class="nova-dropmenu-box">
+                            <div class="form-group">
+                                <label><input name="novaTaskFilterRadio" ng-checked="$ctrl.filter.TouchType"
+                                              ng-model="$ctrl.filter.TouchType" value="0" type="radio" checked/>
+                                    Full Touch Task
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-ctrl">
+                        <div class="nova-dropmenu-box">
+                            <div class="form-group">
+                                <label><input name="novaTaskFilterRadio" ng-model="$ctrl.filter.TouchType" value="1"
+                                              type="radio"/> Low Touch Task </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-ctrl">
+                        <div class="nova-dropmenu-box">
+                            <div class="form-group">
+                                <label>PlanName:</label>
+                                <select class="form-control input-sm" ng-model="$ctrl.filter.PlanName"
+                                        ng-options="x for x in $ctrl.planNameList"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-ctrl">
+                        <div class="nova-dropmenu-box">
+                            <div class="form-group">
+                                <label>planID:</label>
+                                <select class="form-control input-sm" ng-model="$ctrl.filter.PlanId"
+                                        ng-options="x for x in $ctrl.planIdList"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-ctrl">
+                        <div class="nova-search-btn-box">
+                            <button class="btn btn-primary" id="search" type="button" ng-click="$ctrl.getSearchInfo()">
+                                <span class="glyphicon glyphicon-search"></span> Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-mdd nova-result">
+            <div class="nova-task-create-btn-container">
+              <button type="button" class="btn btn-success btn-sm" ng-click="$ctrl.openModal()">
+                    <span class="glyphicon glyphicon-plus-sign"></span> Create Task
+                </button>
+            </div>
+            <table class="table table-bordered" ng-show="$ctrl.resultDidMount">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+              <tr ng-repeat="task in $ctrl.tasks">
+                  <td><a href="#" ng-click="$ctrl.gotoDetail(task.ID)">{{task.ID}}</a></td>
+                    <td>{{task.Name}}</td>
+                    <td>{{task.Description}}</td>
+                    <td>{{task.Category}}</td>
+                    <td>{{task.Status}}</td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+            <div class="nova-pagination" ng-show="$ctrl.resultDidMount">
+                <ul uib-pagination
+                    total-items="$ctrl.totalItems"
+                    ng-model="$ctrl.filter.PageId"
+                    force-ellipses="'3'"
+                    boundary-link-numbers="true"
+                    max-size="$ctrl.maxSize"
+                    rotate="true"
+                    ng-change="$ctrl.pageChanged()"
+                >
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>

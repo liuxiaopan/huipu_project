@@ -1,0 +1,16 @@
+.nova-change-plan-bd .col-mdd {
+  width: 97%;
+}
+
+.nova-change-plan-bd .nova-search-btn-box {
+  text-align: right;
+  margin-top: 0;
+}
+
+.nova-change-plan-hd .nova-go-back {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+}

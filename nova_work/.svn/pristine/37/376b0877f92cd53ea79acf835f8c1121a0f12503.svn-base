@@ -1,0 +1,34 @@
+//
+export default class SectionService{
+	constructor($http, $q){
+		this.$http = $http;
+		this.$q = $q;
+		this.postCfg = {
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			transformRequest: function (data) {
+				return $.param(data);
+			}
+		};
+	}
+
+	addCase(info) {
+		var deferred = this.$q.defer();
+
+		this.$http.post('http://172.17.5.55:9001/api/CaseAPI/AddCase', info, this.postCfg).success(function(res){
+			return deferred.resolve(res);
+		});
+
+		return deferred.promise;
+	}
+
+
+	searchCases(filter, callback) {
+		var deferred = this.$q.defer();
+		this.$http.post('http://172.17.5.55:9001/api/CaseAPI/Search', filter, this.postCfg).success(function(res){
+			//return deferred.resolve(res.Data.Models);
+			callback.onSuccess(res)
+		});
+		return deferred.promise;
+	}
+}
+SectionService.$inject = ["$http", "$q"];

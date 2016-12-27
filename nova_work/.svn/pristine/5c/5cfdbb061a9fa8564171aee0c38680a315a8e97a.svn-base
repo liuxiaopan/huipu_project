@@ -1,0 +1,16 @@
+.nova-login{
+	margin-top: 50px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.nova-login .nova-login-left{
+	height: 309px;
+	background: url("../../../img/u45.png") no-repeat;
+}
+.nova-login .nova-login-right{
+	padding-top: 45px;
+}
+.nova-login .btn-primary{
+	padding-left: 20px;
+	padding-right: 20px;
+}

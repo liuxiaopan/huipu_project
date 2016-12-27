@@ -1,0 +1,163 @@
+require("../template/task-matrix.template.css");
+
+export default class TaskMatrixController {
+  constructor(TaskService, $rootScope) {
+    this.$rootScope = $rootScope;
+    this.TaskService = TaskService;
+    this.selects = [1, 2, 3, 4, 5];
+    this.getInstanceInfo();
+    this.setParam = {
+      TaskId: "",
+      SectionPackageIds: "",
+      CasePackageIds: ""
+    };
+    this.paramArray = {
+      SectionPackageIds: [],
+      CasePackageIds: []
+    }
+    this.counterAdd = 0;
+    this.counterMinus = 0;
+  }
+
+  getInstanceInfo() {
+    //获取matrixData
+    var self = this;
+    self.TaskService.getInstances().then(function (res) {
+      self.tasInfos = res.Task;
+      self.planInfos = res.Plan;
+      self.instances = res.InstanceList;
+      self.sectionTree = res.SectionTree;
+    });
+  }
+
+  showCaseCtrl(section) {
+    if (section.showCase) {
+      section.showCase = false;
+    } else {
+      section.showCase = true;
+    }
+  }
+
+//when executing rowSelectCtrl function,get the row id array via this function
+  getIdArray(obj) {
+    if (obj.rowCtrl) {
+      if (obj.Type == "S") {
+        for (var i = 0; i < obj.Cells.length; i++) {
+          this.paramArray.SectionPackageIds.push(obj.Cells[i].ID);
+        }
+      }
+      if (obj.Type == "C") {
+        for (var i = 0; i < obj.Cells.length; i++) {
+          this.paramArray.CasePackageIds.push(obj.Cells[i].ID);
+        }
+      }
+    } else {
+      if (obj.Type == "S") {
+        for (var i = 0; i < obj.Cells.length; i++) {
+          var index = this.paramArray.SectionPackageIds.indexOf(obj.Cells[i]);
+          this.paramArray.SectionPackageIds.splice(index, 1);
+        }
+      }
+      if (obj.Type == "C") {
+        for (var i = 0; i < obj.Cells.length; i++) {
+          var index = this.paramArray.CasePackageIds.indexOf(obj.Cells[i]);
+          this.paramArray.CasePackageIds.splice(index, 1)
+        }
+      }
+    }
+  }
+
+  //when executing unitCtrl function,get the id of seleted cells[i]
+  getId(obj, pkg) {
+    if (pkg.ctrl) {
+      pkg.ctrl = false;
+      //remove this.ID from paramArray
+      if (obj.Type == "S") {
+        var index = this.paramArray.SectionPackageIds.indexOf(pkg.ID);
+        this.paramArray.SectionPackageIds.splice(index, 1);
+    }
+      if (obj.Type == "C") {
+        var index = this.paramArray.CasePackageIds.indexOf(pkg.ID);
+        this.paramArray.CasePackageIds.splice(index, 1);
+      }
+    } else {
+      pkg.ctrl = true;
+      if (obj.Type == "S") {
+        this.paramArray.SectionPackageIds.push(pkg.ID);
+      }
+      if (obj.Type == "C") {
+        this.paramArray.CasePackageIds.push(pkg.ID);
+      }
+    }
+  }
+
+  rowSelectCtrl(obj, cells) {
+    if (!obj.rowCtrl) {
+      obj.rowCtrl = true;
+      for (var i = 0; i < cells.length; i++) {
+        cells[i].ctrl = obj.rowCtrl;
+      }
+    } else {
+      obj.rowCtrl = false;
+      for (var i = 0; i < cells.length; i++) {
+        cells[i].ctrl = obj.rowCtrl;
+      }
+    }
+    this.getIdArray(obj);
+
+  }
+
+  unitCtrl(obj, cells, pkg) {
+    this.getId(obj, pkg);
+    var statusArray = [];
+    for (var i = 0; i < cells.length; i++) {
+      statusArray.push(cells[i].ctrl);
+    }
+    if (statusArray.indexOf(true) <= -1) {
+      obj.rowCtrl = false;
+    } else if (statusArray.indexOf(false) <= -1 && statusArray.indexOf(undefined) <= -1) {
+      obj.rowCtrl = true;
+    } else {
+      obj.rowCtrl = false;
+    }
+  }
+
+  setNpParams() {
+    var self = this;
+    var param = this.getParam();
+    param.status = "Np";
+    self.TaskService.setNp(param).then(function (res) {
+
+
+    });
+  }
+
+  setNsParams() {
+    var self = this;
+    var param = this.getParam();
+    param.status = "Ns";
+    self.TaskService.setNs(param).then(function (res) {
+
+
+    });
+  }
+
+  setNormalParams() {
+    var self = this;
+    var param = this.getParam();
+    param.status = "Normal";
+    self.TaskService.setNormal(param).then(function (res) {
+
+
+    });
+  }
+
+  getParam() {
+    this.setParam.TaskId = this.tasInfos.ID;
+    this.setParam.SectionPackageIds = this.paramArray.SectionPackageIds.join(",");
+    this.setParam.CasePackageIds = this.paramArray.CasePackageIds.join(",");
+    return this.setParam;
+  }
+
+}
+TaskMatrixController.$inject = ["TaskService", "$rootScope"];

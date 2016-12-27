@@ -1,0 +1,40 @@
+
+{
+  "Status": "OK",
+  "Message": null,
+  "Data": {
+    "Models": [
+      {
+        "ID": 977,
+        "Name": "Instance1",
+        "Platform":"Platform1",
+        "HWSku":"HWSku1",
+        "Hw-phase":"hw-phase1",
+        "OS":"windows",
+        "OSLang":"windows/sxke1",
+        "componentList":["componentList11","componentList12","componentList13","componentList14","componentList15"]
+      },{
+        "ID": 97,
+        "Name": "Instance2",
+        "Platform":"Platform2",
+        "HWSku":"HWSku2",
+        "HWSku":"hw-phase2",
+        "OS":"windows",
+        "OSLang":"windows/sxke",
+        "componentList":["componentList21","componentList22","componentList33","componentList24","componentList25"]
+      },{
+        "ID": 9,
+        "Name": "Instance3",
+        "Platform":"Platform3",
+        "HWSku":"HWSku3",
+        "HWSku":"hw-phase3",
+        "OS":"windows",
+        "OSLang":"windows/sxke",
+        "componentList":["componentList31","componentList32","componentList33","componentList34","componentList35"]
+      }
+    ],
+    "PageId": 1,
+    "TotalCount": 9,
+    "TotalPage": 1
+  }
+}

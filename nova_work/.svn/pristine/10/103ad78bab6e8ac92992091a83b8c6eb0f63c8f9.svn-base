@@ -1,0 +1,23 @@
+{
+  "Status": "OK",
+  "Message": null,
+  "Data":{
+    "Models":[
+      {
+        "secName":"section1",
+        "cases":["case11","case12","case13"],
+        "status":["new","waiting","complete","approval"]
+      },
+      {
+        "secName":"section2",
+        "cases":["case21","case22","case23"],
+        "status":["new","waiting","complete","approval"]
+      },
+      {
+        "secName":"section3",
+        "cases":["case31","case32","case33"],
+        "status":["new","waiting","complete","approval"]
+      }
+    ]
+  }
+}

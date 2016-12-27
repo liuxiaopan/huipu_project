@@ -1,0 +1,113 @@
+
+.search-box {
+    padding-top: 25px;
+}
+
+.nova-content .col-md {
+    float: left;
+    width: 20%;
+    height: auto;
+    overflow: scroll;
+}
+
+.taskSearch .col-mdd {
+    float: left;
+    width: 100%;
+    margin-left: 2%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #428bca;
+}
+
+.col-md-ctrl {
+    width: 20%;
+    float: left;
+    padding-left: 3%;
+}
+.nova-search-ctrl .col-md-ctrl {
+    width: 30%;
+}
+
+.nova-search-ctrl .form-control.nova-doc {
+    height: 35px;
+    font-size: 12px;
+    padding: 6px 4px;
+}
+
+.nova-dropmenu-box {
+    width: 80%;
+}
+
+.nova-dropmenu-box .btn-group {
+    width: 100%;
+}
+
+.nova-dropmenu-box .btn-group .btn-act {
+    width: 85%;
+}
+
+.nova-dropmenu-box .btn-group .btn-menu {
+    width: 15%;
+}
+
+.nova-search-ctrl .form-control {
+    width: 80%;
+}
+
+.nova-content {
+    height: 100%;
+    overflow: hidden;
+}
+
+.treeview .list-group {
+    height: 400px;
+}
+
+.taskSearch .nova-result {
+    padding-top: 20px;
+    border: none;
+    width: 96%;
+}
+
+.nova-result .table > tbody > tr > td {
+    padding: 3px;
+    font-size: 12px;
+}
+
+.nova-ctr-paging {
+    margin-left: -3%;
+    border-top: 1px solid #428bca;
+}
+
+.nova-ctr-paging .pagination {
+    float: right;
+}
+
+.nova-content .col-md .treeview .list-group-item {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0096ff;
+    cursor: default;
+}
+
+.treeview span.icon {
+    cursor: pointer;
+}
+.nova-search-btn-box {
+    text-align: center;
+    margin-top: 21px;
+}
+.nova-task-create-btn-container {
+    padding-bottom: 15px;
+    text-align: right;
+}
+
+.nova-plan-create-btn-container label {
+    font-size: 12px;
+}
+.nova-search-ctrl .col-md-ctrl label {
+    font-size: 12px;
+}
+.nova-pagination {
+    text-align: right;
+}

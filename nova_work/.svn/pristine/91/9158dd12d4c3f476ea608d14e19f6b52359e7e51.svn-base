@@ -1,0 +1,3964 @@
+{
+  "Status": "OK",
+  "Message": null,
+  "Data": {
+    "ID": 160100010001,
+    "DisplayId": null,
+    "Name": "xxx---1",
+    "Description": "Description1",
+    "Status": 10,
+    "Index": 0,
+    "RelGuid": "",
+    "Type": "P",
+    "Children": [
+      {
+        "ID": 16010000100001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description9",
+        "Status": 0,
+        "Index": 1,
+        "RelGuid": "01479e10577fb54eb6928d3c4c1431c3f5",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010002930001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "0102f211149e3145e481baab97e6473d63",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002870001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "010482bc753b9c4008bc2257d2c397e96d",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002750001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "0108190053ece2476b9ab68e6d08c4e00b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002770001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "010c0e85e146014dc98ab185c3bfdb842c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002740001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "0120f08d0f492e4a2e9db193627deca6e0",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002780001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "0123823cc5f64f465b9f4f062715e40076",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002900001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "014564bb33900e4c678e6618318c8d8b20",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002730001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "0149778cb0636647be9c6773115df4b407",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002830001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "0150778bbd81f4450e9f77c9aab97e3658",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002790001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "0151301a00984e49009902006a8fb1c5cc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010003000001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "01621cf8725155404596e73791db873e35",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002720001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "016625d4709cbb41a6834ff301551404fe",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002890001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "01706a2af847bd444891946b8672511493",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002980001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "017a607a2b60a946e5b1d78d6d55101021",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002940001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "017e4888666a5e4fa292f160177f38b02b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002860001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "0189135281b969427b8f255403a2491cb8",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002880001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "0195e5994583f34063931b07ecbfc40d81",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002820001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "019c0433bb275f4d29b09239a7d3606e9d",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002970001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "019e6e36b28a8e4649b5c296036bf3d2a7",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002710001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "019ed3e50752fc4556941ce8718c64e554",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002990001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01a3ad4de353bb4a73988ed6821e8cce94",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002810001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01aafa8b8d41b0440ab410d7637d76add2",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002760001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01bd4d83d5d71c4a38b261d6b435c8912f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002950001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01c0997f6f3bbd4e1092d2ed6766b71e79",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002960001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01dde0dc8d58c649e5a7ce090f710fc9b5",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002910001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01e03970ca49694908b6e94f8eeb12fc0e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002840001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01e840bdafda154b7faace33dfefc90862",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002800001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01fa0fa774455d4d94b52dfbd26fadf0f4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002850001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01fa7730f3cc184420b3df4b5b4e4b639f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002920001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01fb6f7245af404836b6471b52c7729dbf",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000070001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description6",
+        "Status": 0,
+        "Index": 2,
+        "RelGuid": "012a21e9a9cd074daf88fe9d75e1e97b80",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010001990001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "010a0b5ffa3bb0403f86906500e7f7923e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002000001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "0117aaf36467c34106bea6de5cce984e17",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002100001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "0118ae577de3fb465dbd8361e3f9e912a8",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001880001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "01342cd1e5a98e43a9b13c9f46be7b0695",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002010001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "01453a82755e704169a76bd8201a8246d4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002070001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "0147e26aa194bc4c21bc9ba4c84fbdfd5c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001860001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "016a379f98e4fc4615ac5d74f2a7cf9f14",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001870001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "017c9adbbfe33a49bf96f85c37176ba48e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001940001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "017fee7625fd9b4d0dbfb9e84432f3ad01",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001900001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "01818932b0d24e40febac2ac09b1083ec5",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001970001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "018f1c0273b6384279aaec576bd2ac4a07",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001890001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "0190fe2ec009a34a7394743ac2dfca827f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001830001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "01911e0e456fe64e77a3f124b05e553547",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002050001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "019da46136eed24ef68bd75f10b4460023",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001980001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "01a1e7e1b05b444404accc139e374aa1c3",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001920001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "01a4b9377f9beb402cb1c0fd8da682c6c4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002020001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "01a5988c022dfa406eba3624077b9597fb",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001910001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "01a7ff433dbae14929849ca057800149f3",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001820001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "01bf51d3377f2b4120a80502a063eb8b47",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001950001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "01c2f6ce8e2b164f0eabdd44b071ea6399",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002090001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01d20ae6467ea542b0ae27c3b33f4d4422",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002060001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01d50553e72cbb4b5486912c0ad2f3390e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001850001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01d609c63766a74e888e8003c60f712a7b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001810001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01d8c9ce6f152e4f4a99c8b9db45b469cf",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002040001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01d9267062497e47ddb9962a4036b2ee53",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002030001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01e5d8f28eb9544cbfb71f45d45fa663d2",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001840001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01ecdeb988d5f4441497d2580ef53e9c42",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001960001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01ed9362b2953544d8be81b7b5509dac12",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002080001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01f0640224f900411fae1b6c1542a2c2da",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001930001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01f7ea439571b043dda8d5ddbe038d39c4",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000020001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description1",
+        "Status": 0,
+        "Index": 3,
+        "RelGuid": "01603fe24f9f8d47d7a1eed5d7a14e6dc7",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010000490001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "010761fce7ccfd4228a8559b9486760804",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000380001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "011c09018839cc457a9ec2d119eba6854b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000510001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "01307e0c5e3f954bd4affc13f109c24326",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000370001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "01328b4c1af4434298b71370c0ee6f6b1a",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000480001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "0140d1623e4ccf4bfa92583b43bc9a3bb5",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000310001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "0142c04e9830bc408386e45fdaf8ba471e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000570001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "014d929a9fd0c845b8b9b45f7f9e261fa4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000390001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "0151d539ed4fa0404ca9a1bc2aae386b85",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000350001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "015aa78be14deb4e2b8aedfcd9438ceacb",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000460001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "015abe46ee496345cbb64baeefd9f2705a",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000500001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "015d956b9aeea74aa0a30d89fbb7fc54ea",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000420001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "015d9c04e69116482f97ba8a733be76630",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000580001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "01781684712bee4c538132f99d346498e7",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000400001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "017bdb04f416f044b493bbef265a047ac6",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000320001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "0180fdf2713ced440ca7927094e82355bd",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000540001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "0198bc0006f72e4f81bb970545cf1d173b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000470001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "019dbbd033e0a3440baf059d254884d4bb",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000430001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "019e39fd62334f4994ba9a93d2c1956619",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000440001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "01a22dc38ac6fa456e9d4e74304a2eb0a0",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000530001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "01ac48bb8196404bd2aee064812691e230",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000550001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01b0d531fee91c41fbbc58719212565c7f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000340001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01b950e1ca4a41410d851c459342137e8e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000360001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01c49624be06c247bb8d041486223e1a17",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000520001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01d32d0934e6e949de8f4abb3909b1df21",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000330001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01d4f092dce13640f689cf35f93ee9156c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000560001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01e00fc4cc63e7408b81c239df066d57af",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000600001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01e4fc137886064a7c817f43858664a9ba",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000410001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01f01106927e6f435186400f14c514c3d8",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000590001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01fd84a681527e4ac09bbea324d9c9c288",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000450001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01ff1f77d62bf94e0196ff6644f5b89173",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000080001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description7",
+        "Status": 0,
+        "Index": 4,
+        "RelGuid": "01a24a6de8d7ec4c819dcf4b9614bae998",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010002350001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "01044c1e859af441a1804ebbdd3aa80cc6",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002260001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "0104bbc07030304407be18c997ec3cfbbd",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002120001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "010516785394ea48009d68fb6ce8e17af6",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002220001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "0112daf6891def46e99327217124c1975f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002170001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "011a389c9730a8466f9d4b5199c9bf0184",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002270001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "01298b04c9791549abb54e12deaeb1de63",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002200001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "012acb76a8ea0841bf8d28006438d9c5d1",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002210001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "012f52a8878add406794bf5fcf887e809b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002160001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "013aa14a5366484fc2bdd3563e27317876",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002390001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "013bb2f6efeb354b65ba5d637a88151fa5",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002360001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "014c04f149ab244f0fb6d9d1fce81458ac",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002380001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "014d464f034fb74d0e8fed7c87f6365a65",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002140001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "014f9fe3f80ac1456c83c66efd07380b64",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002130001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "01564b12e3af9644dba8f64f22a4b477c3",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002330001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "015fca6454bce743438c7bbddcb957bbca",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002240001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "016615c0cf14974e7eb5623b55e92a4218",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002340001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "01684e53ca97e14690871dd7a86071b79a",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002320001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "01739362aa33bf467eb00603d44177f004",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002400001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "0186311413a9d84a78ad68dbe028af6246",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002310001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "0188ade192a182498b9788c3083097c15a",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002370001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "019256a2c442004c6db2e98c382abc543b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002180001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01aad31025669d408a81466d24dfed1133",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002230001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01aff28e929dea408094fee5957cd2ccde",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002250001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01b2522d30083d42d1a46acef8b5639400",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002190001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01c4f8bc4639e64c99bbafead183d5c5dc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002300001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01d0921b68d65845438bbd35a10c4859de",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002150001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01db15b634c2dd450bbaf41a04e637e455",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002110001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01df8dc3a153a741cfbabdd96659699825",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002290001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01f1306f5796954297baf6e6202737544b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002280001,
+            "DisplayId": null,
+            "Name": "Case7",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01f6eec9ba00c748b1b58419e3d136e927",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000010001,
+        "DisplayId": null,
+        "Name": "xxx---1",
+        "Description": "Section Description0",
+        "Status": 11,
+        "Index": 5,
+        "RelGuid": "01baa06c59783c49cb8ab0dab6a2b5aabb",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010000110001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "01028613ab8eec4401948dccb39f78812c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000290001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "0103f1d9e84256418e9b211147a1688430",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000180001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "0105559e6603ea422799f284ae1ddf2b42",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000140001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "01064080a0e58c4951ba2cdd0d60b1be46",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000270001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "0106543bc864c046368b4b40c08ea01b13",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000190001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "01082f58440a574aed826e1bfc073d680d",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000130001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "0110c99c89a6454fb3a9749167df31bc00",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000090001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "01187464f58f614b589f2e2649689ef572",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000150001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "012156c094e49e46aa9913e46950853786",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000170001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "0123882392a22c4b32a9f26e8f04a7aafc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000230001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "012e0cb293b59a4614b4951de9369cd8f6",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000080001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "0143428bb7f8524de088cd9fe9f0eb8be7",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000250001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "01482aa8c214da4448ae45e166475c28da",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000200001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "014c036b4a21be42f09180f76e3dc5b523",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000220001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "014cb72cc8ca0c4d67a7205a7e01ba0c36",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000050001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "014d258bb522f94e1796fbfe5cede78e5b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000210001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "0152318b083cff4318bd3fac28795fe56e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000030001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "0168b5c55e72344861975c5c0601f2e888",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000160001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "0171ee4e92564940df908325a62ad12e9a",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000280001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "01909c97e15dae4e8e88063c73c68d4bfd",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000060001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01979c0f7721f149b3b388c144b710d85c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000040001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "019b93c810ef90446bb1ed5e5c4e1543ed",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000120001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01bc266c27dee3432796d53ec7404c9a87",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000300001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01bea6f837fce246acb8f7cd35dd1788c7",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000070001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01c716b6db49164d1abcccad7237a265e0",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000010001,
+            "DisplayId": null,
+            "Name": null,
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01d4bc6009fa55436fb7306512fe928e43",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000240001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01dcdd26d90d1446bf92cf4e64b394b544",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000260001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01e0ebd93d19de4b51b8d604826a09f82c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000020001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01eddb522e027246f888a5f50e7c8679fc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000100001,
+            "DisplayId": null,
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01f5607424ca0b437b8f871a56c523702f",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000090001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description8",
+        "Status": 0,
+        "Index": 6,
+        "RelGuid": "01c6ea5e0c604349c5a1fef61e15e406d2",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010002610001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "01058ba56637c144c48330527001be9d09",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002550001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "01233c316044784035aaaa3ee468738c8a",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002500001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "012368ffee0e804953a2fbf8cb37e800b8",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002660001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "0134f17aa17c304a1b984e7a639268c3ad",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002480001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "013b11aefd56f647c79a2aefcf4a333ee9",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002640001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "013b8b0259f66147ac9292bbf1db7da3a4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002440001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "0152f56de9974243cab0d510799f90e317",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002510001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "01594eabe521214cf3928bd3ccb67177fe",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002590001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "0159e6002343cd46a8aa9010cc6ad1daf9",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002700001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "0166d0e04e41a740aea47e18453a9330de",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002620001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "017315189e066e4045b06ac210f7338ac9",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002460001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "01754e9c82864147a39ffabc605f8777ed",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002650001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "017dede2b0e70a4ed1b7db9944564cacbd",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002580001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "018591778274e1410ca77b669c6c163d9b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002450001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "01a7e82551d5b34cc0b2ed5684d7363e7e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002490001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "01ac9194f854b245648f666c6a12ebf184",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002630001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "01b27bcf7f5b64482cbcb984b6e19cf027",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002560001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "01b3c1f8d304de4c91966ee3536032edc3",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002530001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "01b4743b847bbd432b97401c932d1c30e4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002520001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "01ba69f742f6ba4932be619e56d520eb1d",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002690001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01bfbaf8dc4f9949c896beefb493f5f5cb",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002430001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01c901b61170cb4395b473208f09d75613",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002680001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01ccff857c7fc444cdbc8f0c9747dd2f00",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002410001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01cff955a0269343ef8a01b2d1dc83b1fd",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002670001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01d972ecff8e4d4d7f9a7fb37bd0bac9a1",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002470001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01dc3cc69102904b86aa3e80e127b9abce",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002420001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01e5444ee8523e46e3a08f31dbb3344ec4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002600001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01e73822747f284d78badab1d15ec431cd",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002540001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01f54336885ca947b09a45cf36a7aa5fd7",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002570001,
+            "DisplayId": null,
+            "Name": "Case8",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01fc340a87b7964b3799d9c1e940fe5722",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000060001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description5",
+        "Status": 0,
+        "Index": 7,
+        "RelGuid": "01e62218f05c814a5fb5f7cc15dd07b665",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010001510001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "010091ec530fdc472b857e3e8a861ab80b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001570001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "010bd0d34e46e642e9a92d57b5da9ddc40",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001600001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "010ccad7673244451da86701c2c95175ce",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001700001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "01169769d2a26a4f368a6f37b2dd1ef00c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001540001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "0118f11d89961445aa9c906fc519fd7980",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001710001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "011c6b444c61c94bac85949ddcccb1323f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001590001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "011da0ba4db8c742f18bd4d3039dd692d1",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001560001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "0126055089fe1742eea4ec181b5818d6a8",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001760001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "012f11fea72d4a42eb9d3e68ed7f0a6b73",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001680001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "01315a6fa4728c41c19de464d87a7079b3",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001670001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "01357d2d4f7bef42b3a9fa87ab713660dc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001550001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "013819f7c9991b42b6871e856929fa6be6",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001800001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "014e5eb37abce740619886dc9622411dbf",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001530001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "014f0d75324dc34529865134896fac7618",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001730001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "0151d0f919ab28428e9f117388bf151789",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001780001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "01539c91c7c7bc429d983764fa7f118633",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001660001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "015d1ffd3ed9be4896af068d68a454fcaa",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001720001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "01608b08c7b57e4ab9802b125c907365ff",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001620001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "016e0c90be65fd46e59a867d97258c209e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001770001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "0170a35ac2a7054de49b1f19caec46a3e7",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001640001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01772453bbd0ba4ec794a66e446d530138",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001690001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01785a623241754dc5b4ec6d8989f1d7c3",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001750001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01a6bbb4918a394e16839000f836a433ad",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001520001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01c1f2ce2c536543218e27e69bfb23f406",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001630001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01c5afe883bda84d3ab005334b6fff52a9",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001740001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01cb3b8bd787af41c0a76269cceed165e2",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001650001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01d9c6f242051a4d9c8746c140378c8d04",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001610001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01dfffd36ba2d54da6993e6b7e6bb00abb",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001790001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01f15a55f27e3045ca877027cd67b5d0f0",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001580001,
+            "DisplayId": null,
+            "Name": "Case5",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01f6e7f18cbf1c45a19972aa48f0df08ce",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000050001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description4",
+        "Status": 0,
+        "Index": 8,
+        "RelGuid": "01e9748f670d88472b8b040b51d4e89b24",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010001290001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "010508c2233715433da6ad6b580926515e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001400001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "01116bc7b0db9d40f18f464d1c3989bd42",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001430001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "0123bc2c8572074d03856d2644165dd778",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001240001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "014236a728008f457da53255fd9ae997b3",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001210001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "014739e43bcab842fda02f0aae158ff8c1",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001500001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "014af6c4a5361f4b9f835a82891e99d08b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001460001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "014bf0fc4c3e2b453fbf3954cb6d2700e2",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001330001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "0151cb87728b3b4551be6816e7bdbcca44",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001340001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "015bedf80dfefb4ab1a8552534c45d1f9e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001270001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "015cd72fec40524ae9ac0996ceb59c4514",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001470001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "01633930fca23c43f98955bebc373a63fa",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001220001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "0168432fdcc6ee4298a127ba2f4db4d8c1",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001410001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "016bdd15a5b578415591b5bb61f25309fc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001320001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "016df7abcf5a6b466294dc7666e995b59d",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001450001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "0175bbcd1eb91749ce8377bd527cd37853",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001380001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "0185edc308603341e0aabbd689db4eff76",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001370001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "01882be2a239ad4362a9c24ecac64f8b8b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001300001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "018e0a4678fc734e6ba7eef531fa759be6",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001420001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "01941e5694402b4941a8d08db80d0c7eeb",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001390001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "019a759c93c1934e9a9c2af7e46adfdf9b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001250001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01a4d0658f37e44a44bca26a2e3621c3d2",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001230001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01aff272232a7c4976bb9862e051560234",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001360001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01d471aeb903a841aca25a31f6a10f2ac2",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001480001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01d5fd50ec57a1495c91e56477b340ec91",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001490001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01ef3a2d2369c44e939cfcb33888ba9401",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001310001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01f11eab2dd06747008416dbfc92b5acf4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001260001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01f3c4bcd526f9485a881cf674f95bc9fc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001440001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01f41bc2e1e2c144f682aa441b361c4a8e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001350001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01f61cfd2e5fbc45da90bc29b26300dd44",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001280001,
+            "DisplayId": null,
+            "Name": "Case4",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01fe0f38ad53474bd983fe419232ddca70",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000030001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description2",
+        "Status": 0,
+        "Index": 9,
+        "RelGuid": "01efb24d6b31024cbba839ead973139686",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010000710001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "010447a71088a24b48bfe7742e83e7b682",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000630001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "01083b21574acf40c5bac5e84b29316164",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000800001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "010bb60f6b69314139a3e11904240d3bec",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000850001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "010d54638ff24542ca960a7613b4b193b2",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000650001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "011499623dae6d4a4abf99994fcd9718bb",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000900001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "01214cae304f4644b2aa93e160327487a1",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000720001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "01234ba3d2e1254270b0604c11041918cf",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000790001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "01285b350120f94b5ba032fc56f53195dc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000820001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "012ae2435a5529456aa3efbf691d5dfbfa",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000700001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "012c9ff60a8ec64bd6ae52b90a6c8c5b15",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000890001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "013fe400fe35e242cba86ba470fc415d29",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000750001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "014752e83525854bf5b2ff52d63d2de4d7",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000880001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "01564846c4956d4612b9a66debafffdafc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000740001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "0157d26ed8997e43cfa818a8a08ec76f84",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000760001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "0169b30387b08f498083022573ba76d258",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000770001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "017721031a96f9440b8cfd1ef8afbf0946",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000780001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "0182a8bf53853244da82e238655dece718",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000730001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "01903d2b448dcd4a43986638c194c322c6",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000860001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "01a2fecd854dfd412d9b2b02b2f2c5b4e4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000690001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "01a44251256f484074a25c34f21720eeee",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000840001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01a4f9716fa9a6481080395b8f9f1537f9",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000640001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01ad6258c846a2444993aae4986ca70d63",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000810001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01af23922643234a13ab9617f82f1ee946",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000660001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01b5e52a8ad68a475397e02e3174a97c48",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000670001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01c0f60471c2724e1caca70795f25733c9",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000870001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01d24d7a516cad43b0a05884eb7291a144",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000830001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01d5111bec3c4d4560b492ad8ecd3c9409",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000610001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01e552649b9b404cf687a67d9d01115cc4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000680001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01f32ab4444f6d44e08508af585e09009e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000620001,
+            "DisplayId": null,
+            "Name": "Case2",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01f619e25cfef447d093d5e40e21fcc627",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000040001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description3",
+        "Status": 0,
+        "Index": 10,
+        "RelGuid": "01f3b6279cb8e14c6e9f6a8e9984f32f90",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010001180001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "0102d67405865947f2bf7c3e402aad42cd",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001020001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "01153a158df990487fa7885a37604e5b7a",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001090001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "0119225c967cea4ae7900e5abc37a996bb",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001010001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "011b3230e3191642018d8db24d517afb1d",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001060001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "011ed3c30d1afd4e6ca08be89e1ad272ba",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000970001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "0128a8cfe91f77474585b51fb8c91b5f9b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001150001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "01295d813831ad4d19a1e5db6fcdc918cd",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000990001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "0129b58ab4e04c48f59fe7127f8aef1656",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001070001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "015363ca373d3b4907934c3ebe9a1dae32",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000920001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "015d9031454c3d442d86a6c366df2437aa",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000940001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "0163e56017dbbd4d1da32e30e74cbbb5d8",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001040001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "016aab807498f24813a5c44f7ed6f1f5c5",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001170001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "017846cbcb7d6843e78119d783b29a6fae",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001120001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "0186cd4d0c6e414898b9ea665a0d25864a",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000960001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "0188f92d9e657c4995bc755b02693f5011",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001030001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "01905e9b5d4ab74809b2e75b73a4638676",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000930001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "01957f462c59ae4798a5a811f3e5a4088d",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000910001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "0196436e3f80b1477fb1e135dd223a06a8",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001160001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "019e0174de269443e48fa67f6b028de738",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001190001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "01b5ad72c8d1884dc1aa6748930fa4ac56",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000980001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01c258cd9ddc3046ce8eddea5fb0e8615e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001100001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01c25fcfb7c5364e32a9e33e451d5aa8cc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001200001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01c7e7e482d7be46cbb3e43cdd136a70d3",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001110001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01ca7873e811eb4eb59d3b253d5417c277",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000950001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01cab4ac223fff481694552d570acc4afc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001140001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01dd3275307db247fc8453d21a3cabf198",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001130001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01e08e9c3e3ff44d69a391644fe413867a",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001080001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01ef5e3e8de5024a9cb9938c6ca4998703",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001000001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01f466d670632b42ceb837b6ab581a3b3c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001050001,
+            "DisplayId": null,
+            "Name": "Case3",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01f69b6c7342c94c29b4a394f820341ba4",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000100001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description9",
+        "Status": 0,
+        "Index": 11,
+        "RelGuid": "9c6a1136-1273-484a-9134-ad7fdf7ee4",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010002930001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "0102f211149e3145e481baab97e6473d63",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002870001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "010482bc753b9c4008bc2257d2c397e96d",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002750001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "0108190053ece2476b9ab68e6d08c4e00b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002770001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "010c0e85e146014dc98ab185c3bfdb842c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002740001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "0120f08d0f492e4a2e9db193627deca6e0",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002780001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "0123823cc5f64f465b9f4f062715e40076",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002900001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "014564bb33900e4c678e6618318c8d8b20",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002730001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "0149778cb0636647be9c6773115df4b407",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002830001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "0150778bbd81f4450e9f77c9aab97e3658",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002790001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "0151301a00984e49009902006a8fb1c5cc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010003000001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "01621cf8725155404596e73791db873e35",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002720001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "016625d4709cbb41a6834ff301551404fe",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002890001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "01706a2af847bd444891946b8672511493",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002980001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "017a607a2b60a946e5b1d78d6d55101021",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002940001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "017e4888666a5e4fa292f160177f38b02b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002860001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "0189135281b969427b8f255403a2491cb8",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002880001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "0195e5994583f34063931b07ecbfc40d81",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002820001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "019c0433bb275f4d29b09239a7d3606e9d",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002970001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "019e6e36b28a8e4649b5c296036bf3d2a7",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002710001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "019ed3e50752fc4556941ce8718c64e554",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002990001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01a3ad4de353bb4a73988ed6821e8cce94",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002810001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01aafa8b8d41b0440ab410d7637d76add2",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002760001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01bd4d83d5d71c4a38b261d6b435c8912f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002950001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01c0997f6f3bbd4e1092d2ed6766b71e79",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002960001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01dde0dc8d58c649e5a7ce090f710fc9b5",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002910001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01e03970ca49694908b6e94f8eeb12fc0e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002840001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01e840bdafda154b7faace33dfefc90862",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002800001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01fa0fa774455d4d94b52dfbd26fadf0f4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002850001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01fa7730f3cc184420b3df4b5b4e4b639f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002920001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01fb6f7245af404836b6471b52c7729dbf",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000100001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description9",
+        "Status": 0,
+        "Index": 12,
+        "RelGuid": "e66b69ec-d57a-4477-8ed6-a433ce6579",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010002930001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "0102f211149e3145e481baab97e6473d63",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002870001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "010482bc753b9c4008bc2257d2c397e96d",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002750001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "0108190053ece2476b9ab68e6d08c4e00b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002770001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "010c0e85e146014dc98ab185c3bfdb842c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002740001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "0120f08d0f492e4a2e9db193627deca6e0",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002780001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "0123823cc5f64f465b9f4f062715e40076",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002900001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "014564bb33900e4c678e6618318c8d8b20",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002730001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "0149778cb0636647be9c6773115df4b407",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002830001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "0150778bbd81f4450e9f77c9aab97e3658",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002790001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "0151301a00984e49009902006a8fb1c5cc",
+            "Type": "C"
+          },
+          {
+            "ID": 16010003000001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "01621cf8725155404596e73791db873e35",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002720001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "016625d4709cbb41a6834ff301551404fe",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002890001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "01706a2af847bd444891946b8672511493",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002980001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "017a607a2b60a946e5b1d78d6d55101021",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002940001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "017e4888666a5e4fa292f160177f38b02b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002860001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "0189135281b969427b8f255403a2491cb8",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002880001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "0195e5994583f34063931b07ecbfc40d81",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002820001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "019c0433bb275f4d29b09239a7d3606e9d",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002970001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "019e6e36b28a8e4649b5c296036bf3d2a7",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002710001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "019ed3e50752fc4556941ce8718c64e554",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002990001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01a3ad4de353bb4a73988ed6821e8cce94",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002810001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01aafa8b8d41b0440ab410d7637d76add2",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002760001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01bd4d83d5d71c4a38b261d6b435c8912f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002950001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01c0997f6f3bbd4e1092d2ed6766b71e79",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002960001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01dde0dc8d58c649e5a7ce090f710fc9b5",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002910001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01e03970ca49694908b6e94f8eeb12fc0e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002840001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01e840bdafda154b7faace33dfefc90862",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002800001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01fa0fa774455d4d94b52dfbd26fadf0f4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002850001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01fa7730f3cc184420b3df4b5b4e4b639f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002920001,
+            "DisplayId": null,
+            "Name": "Case9",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01fb6f7245af404836b6471b52c7729dbf",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000020001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description1",
+        "Status": 0,
+        "Index": 13,
+        "RelGuid": "6aa905f7-9636-4404-aeb1-25b04b8a6c",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010000490001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "010761fce7ccfd4228a8559b9486760804",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000380001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "011c09018839cc457a9ec2d119eba6854b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000510001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "01307e0c5e3f954bd4affc13f109c24326",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000370001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "01328b4c1af4434298b71370c0ee6f6b1a",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000480001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "0140d1623e4ccf4bfa92583b43bc9a3bb5",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000310001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "0142c04e9830bc408386e45fdaf8ba471e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000570001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "014d929a9fd0c845b8b9b45f7f9e261fa4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000390001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "0151d539ed4fa0404ca9a1bc2aae386b85",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000350001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "015aa78be14deb4e2b8aedfcd9438ceacb",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000460001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "015abe46ee496345cbb64baeefd9f2705a",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000500001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "015d956b9aeea74aa0a30d89fbb7fc54ea",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000420001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "015d9c04e69116482f97ba8a733be76630",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000580001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "01781684712bee4c538132f99d346498e7",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000400001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "017bdb04f416f044b493bbef265a047ac6",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000320001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "0180fdf2713ced440ca7927094e82355bd",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000540001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "0198bc0006f72e4f81bb970545cf1d173b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000470001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "019dbbd033e0a3440baf059d254884d4bb",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000430001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "019e39fd62334f4994ba9a93d2c1956619",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000440001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "01a22dc38ac6fa456e9d4e74304a2eb0a0",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000530001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "01ac48bb8196404bd2aee064812691e230",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000550001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01b0d531fee91c41fbbc58719212565c7f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000340001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01b950e1ca4a41410d851c459342137e8e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000360001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01c49624be06c247bb8d041486223e1a17",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000520001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01d32d0934e6e949de8f4abb3909b1df21",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000330001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01d4f092dce13640f689cf35f93ee9156c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000560001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01e00fc4cc63e7408b81c239df066d57af",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000600001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01e4fc137886064a7c817f43858664a9ba",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000410001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01f01106927e6f435186400f14c514c3d8",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000590001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01fd84a681527e4ac09bbea324d9c9c288",
+            "Type": "C"
+          },
+          {
+            "ID": 16010000450001,
+            "DisplayId": null,
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01ff1f77d62bf94e0196ff6644f5b89173",
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "ID": 16010000070001,
+        "DisplayId": null,
+        "Name": "0-section",
+        "Description": "Section Description6",
+        "Status": 0,
+        "Index": 14,
+        "RelGuid": "bf8b129b-cd3f-4075-88fe-59194c9bc8",
+        "Type": "S",
+        "Children": [
+          {
+            "ID": 16010001990001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 1,
+            "RelGuid": "010a0b5ffa3bb0403f86906500e7f7923e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002000001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 2,
+            "RelGuid": "0117aaf36467c34106bea6de5cce984e17",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002100001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 3,
+            "RelGuid": "0118ae577de3fb465dbd8361e3f9e912a8",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001880001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 4,
+            "RelGuid": "01342cd1e5a98e43a9b13c9f46be7b0695",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002010001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 5,
+            "RelGuid": "01453a82755e704169a76bd8201a8246d4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002070001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 6,
+            "RelGuid": "0147e26aa194bc4c21bc9ba4c84fbdfd5c",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001860001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 7,
+            "RelGuid": "016a379f98e4fc4615ac5d74f2a7cf9f14",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001870001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 8,
+            "RelGuid": "017c9adbbfe33a49bf96f85c37176ba48e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001940001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 9,
+            "RelGuid": "017fee7625fd9b4d0dbfb9e84432f3ad01",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001900001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 10,
+            "RelGuid": "01818932b0d24e40febac2ac09b1083ec5",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001970001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 11,
+            "RelGuid": "018f1c0273b6384279aaec576bd2ac4a07",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001890001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 12,
+            "RelGuid": "0190fe2ec009a34a7394743ac2dfca827f",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001830001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 13,
+            "RelGuid": "01911e0e456fe64e77a3f124b05e553547",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002050001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 14,
+            "RelGuid": "019da46136eed24ef68bd75f10b4460023",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001980001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 15,
+            "RelGuid": "01a1e7e1b05b444404accc139e374aa1c3",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001920001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 16,
+            "RelGuid": "01a4b9377f9beb402cb1c0fd8da682c6c4",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002020001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 17,
+            "RelGuid": "01a5988c022dfa406eba3624077b9597fb",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001910001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 18,
+            "RelGuid": "01a7ff433dbae14929849ca057800149f3",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001820001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 19,
+            "RelGuid": "01bf51d3377f2b4120a80502a063eb8b47",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001950001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 20,
+            "RelGuid": "01c2f6ce8e2b164f0eabdd44b071ea6399",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002090001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 21,
+            "RelGuid": "01d20ae6467ea542b0ae27c3b33f4d4422",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002060001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 22,
+            "RelGuid": "01d50553e72cbb4b5486912c0ad2f3390e",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001850001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 23,
+            "RelGuid": "01d609c63766a74e888e8003c60f712a7b",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001810001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 24,
+            "RelGuid": "01d8c9ce6f152e4f4a99c8b9db45b469cf",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002040001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 25,
+            "RelGuid": "01d9267062497e47ddb9962a4036b2ee53",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002030001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 26,
+            "RelGuid": "01e5d8f28eb9544cbfb71f45d45fa663d2",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001840001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 27,
+            "RelGuid": "01ecdeb988d5f4441497d2580ef53e9c42",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001960001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 28,
+            "RelGuid": "01ed9362b2953544d8be81b7b5509dac12",
+            "Type": "C"
+          },
+          {
+            "ID": 16010002080001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 29,
+            "RelGuid": "01f0640224f900411fae1b6c1542a2c2da",
+            "Type": "C"
+          },
+          {
+            "ID": 16010001930001,
+            "DisplayId": null,
+            "Name": "Case6",
+            "Status": 0,
+            "Index": 30,
+            "RelGuid": "01f7ea439571b043dda8d5ddbe038d39c4",
+            "Type": "C"
+          }
+        ]
+      }
+    ]
+  }
+}

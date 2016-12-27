@@ -1,0 +1,31 @@
+{
+  "Status": "OK",
+  "Message": null,
+  "Data": {
+    "Task": {
+      "ID": 1601000100001,
+      "Name": "TaskInfo",
+      "Description": null,
+      "TouchType": 0,
+      "StartTime": "0001-01-01T00:00:00",
+      "EndTime": "0001-01-01T00:00:00",
+      "PlanId": 160100010001,
+      "Status": 0,
+      "Target": null,
+      "TestingSiteId": 0,
+      "TestLeaderId": 0,
+      "Keyword": null,
+      "task_total_onduty": 0,
+      "task_total_onduty_nobody": 0,
+      "CreateTime": "0001-01-01T00:00:00",
+      "AuthorId": 0,
+      "UpdateTime": "0001-01-01T00:00:00",
+      "UpdateUser": 0
+    },
+    "Plan": {
+      "ID": 160100010001,
+      "Name": "PlanName1",
+      "Description": "Description1"
+    }
+  }
+}

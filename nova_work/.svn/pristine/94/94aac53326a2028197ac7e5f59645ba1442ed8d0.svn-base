@@ -1,0 +1,30 @@
+{
+	"app":{
+		"title": "Nova-Data Center",
+		"subTitle": "[HP CONFIDENTIAL]",
+		"version": "1.0.0",
+		"license": "This software is confidential proprietary software licensed by Hewlett-Packard Development Company, L.P. and is not authorized to be used, duplicated or disclosed to any one without the prior written permission of HP.",
+		"copyright": "© 2015 Copyright Hewlett-Packard Development Company, L.P.",
+		"rtm": "R1.0 20160429RTM"
+	},
+	"topNav": {
+		"login": "Login",
+		"logout": "logout",
+		"planList": "planList",
+	  "planDetail":"planDetail",
+	  "taskMatrix":"taskMatrix",
+	  "taskDesktop":"taskDesktop"
+	},
+	"loginForm": {
+		"loginName": {
+			"label": "User Name"
+		},
+		"password": {
+			"label": "Password"
+		},
+		"registerTip": "To register account, please contact <a ui-sref=''>Admin</a>.",
+		"submitButton": {
+			"text": "Login"
+		}
+	}
+}

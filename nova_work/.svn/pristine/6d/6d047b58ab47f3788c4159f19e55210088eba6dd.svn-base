@@ -1,0 +1,42 @@
+//
+export default class SectionService{
+	constructor($http, $q){
+		this.$http = $http;
+		this.$q = $q;
+		this.postCfg = {
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			transformRequest: function (data) {
+				return $.param(data);
+			}
+		};
+	}
+
+	addSection(info) {
+		var deferred = this.$q.defer();
+
+		this.$http.post('http://172.17.5.55:9001/api/SectionAPI/AddSection', info, this.postCfg).success(function(res){
+			return deferred.resolve(res);
+		});
+
+		return deferred.promise;
+	}
+	
+  AddSectionInPlan(planId) {
+	  var deferred = this.$q.defer();
+	  this.$http.get('http://172.17.5.55:9001/api/SectionAPI/AddSectionInPlan?planId=' + planId).success(function (res) {
+      return deferred.resolve(res.Data);
+    });
+
+    return deferred.promise;
+  }
+
+	searchSections(filter, callback) {
+		var deferred = this.$q.defer();
+		this.$http.post('http://172.17.5.55:9001/api/SectionAPI/Search', filter, this.postCfg).success(function(res){
+			//return deferred.resolve(res.Data.Models);
+			callback.onSuccess(res)
+		});
+		return deferred.promise;
+	}
+}
+SectionService.$inject = ["$http", "$q"];

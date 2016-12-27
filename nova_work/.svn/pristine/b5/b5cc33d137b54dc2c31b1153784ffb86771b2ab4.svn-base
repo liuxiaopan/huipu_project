@@ -1,0 +1,272 @@
+{
+  "Status": "OK",
+  "Message": null,
+  "Data": {
+    "Task": {
+      "ID": 1601000100001,
+      "Name": "TaskInfo",
+      "Description": null,
+      "TouchType": 0,
+      "StartTime": "0001-01-01T00:00:00",
+      "EndTime": "0001-01-01T00:00:00",
+      "PlanId": 160100010001,
+      "Status": 0,
+      "Target": null,
+      "TestingSiteId": 0,
+      "TestLeaderId": 0,
+      "Keyword": null,
+      "task_total_onduty": 0,
+      "task_total_onduty_nobody": 0,
+      "CreateTime": "2016-12-14T17:49:05",
+      "AuthorId": 0,
+      "UpdateTime": "0001-01-01T00:00:00",
+      "UpdateUser": 0
+    },
+    "Plan": {
+      "ID": 160100010001,
+      "DisplayId": null,
+      "Name": "Plan-Name-1",
+      "Status": 0
+    },
+    "InstanceList": [
+      {
+        "ID": 1601000100001000000,
+        "Name": "Instance0",
+        "PlatformId": 1,
+        "HwSku": "sku-1",
+        "HwPhase": "1",
+        "ComponentList": "4,9,14,20,25",
+        "Components": [
+          {
+            "ID": 4,
+            "Name": "HP 3001pr USB3 Port Replicator Driver ",
+            "Path": "/SOFTWARE/Driver/3001pr Replicator/HP 3001pr USB3 Port Replicator Driver ",
+            "PartNo": null
+          },
+          {
+            "ID": 9,
+            "Name": "HP 3005pr USB 3.0 Port Replicator Driver",
+            "Path": "/SOFTWARE/Driver/3005pr Replicator/HP 3005pr USB 3.0 Port Replicator Driver",
+            "PartNo": null
+          },
+          {
+            "ID": 14,
+            "Name": "HP 3D DriveGuard6",
+            "Path": "/SOFTWARE/Driver/3D DriveGuard/HP 3D DriveGuard6",
+            "PartNo": null
+          },
+          {
+            "ID": 20,
+            "Name": "AMD AHCI Controller Driver",
+            "Path": "/SOFTWARE/Driver/AMD AHCI Controller/AMD AHCI Controller Driver",
+            "PartNo": null
+          },
+          {
+            "ID": 25,
+            "Name": "AMD IO Driver",
+            "Path": "/SOFTWARE/Driver/AMD IO/AMD IO Driver",
+            "PartNo": null
+          }
+        ],
+        "OS": 0,
+        "OSLang": 0
+      },
+      {
+        "ID": 1601000100001000000,
+        "Name": "Instance1",
+        "PlatformId": 1,
+        "HwSku": "sku-1",
+        "HwPhase": "1",
+        "ComponentList": "4,9,14,20,25",
+        "Components": [
+          {
+            "ID": 4,
+            "Name": "HP 3001pr USB3 Port Replicator Driver ",
+            "Path": "/SOFTWARE/Driver/3001pr Replicator/HP 3001pr USB3 Port Replicator Driver ",
+            "PartNo": null
+          },
+          {
+            "ID": 9,
+            "Name": "HP 3005pr USB 3.0 Port Replicator Driver",
+            "Path": "/SOFTWARE/Driver/3005pr Replicator/HP 3005pr USB 3.0 Port Replicator Driver",
+            "PartNo": null
+          },
+          {
+            "ID": 14,
+            "Name": "HP 3D DriveGuard6",
+            "Path": "/SOFTWARE/Driver/3D DriveGuard/HP 3D DriveGuard6",
+            "PartNo": null
+          },
+          {
+            "ID": 20,
+            "Name": "AMD AHCI Controller Driver",
+            "Path": "/SOFTWARE/Driver/AMD AHCI Controller/AMD AHCI Controller Driver",
+            "PartNo": null
+          },
+          {
+            "ID": 25,
+            "Name": "AMD IO Driver",
+            "Path": "/SOFTWARE/Driver/AMD IO/AMD IO Driver",
+            "PartNo": null
+          }
+        ],
+        "OS": 0,
+        "OSLang": 0
+      }
+    ],
+    "SectionTree": [
+      {
+        "Cells": [
+          {
+            "ID": 0,
+            "Status": 1,
+            "AssigneeName": null,
+            "AssignerName": null
+          },
+          {
+            "ID": 0,
+            "Status": 1,
+            "AssigneeName": null,
+            "AssignerName": null
+          }
+        ],
+        "ID": 0,
+        "DisplayId": "0-SH-6010001-1",
+        "Name": "Section0",
+        "Description": "Section Description0",
+        "Status": 0,
+        "Index": 0,
+        "RelGuid": null,
+        "Type": "S",
+        "Children": [
+          {
+            "Cells": [
+              {
+                "Result": 0,
+                "ID": 1601000100001000000,
+                "Status": 0,
+                "AssigneeName": "Alex_test",
+                "AssignerName": "Son_Le"
+              },
+              {
+                "Result": 0,
+                "ID": 1601000100001000000,
+                "Status": 0,
+                "AssigneeName": "Alex_test",
+                "AssignerName": "Son_Le"
+              }
+            ],
+            "ID": 0,
+            "DisplayId": "0-SH-6010001-1",
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 0,
+            "RelGuid": null,
+            "Type": "C"
+          },
+          {
+            "Cells": [
+              {
+                "Result": 0,
+                "ID": 1601000100001000000,
+                "Status": 0,
+                "AssigneeName": "Alex_test",
+                "AssignerName": "Son_Le"
+              },
+              {
+                "Result": 0,
+                "ID": 1601000100001000000,
+                "Status": 0,
+                "AssigneeName": "Alex_test",
+                "AssignerName": "Son_Le"
+              }
+            ],
+            "ID": 0,
+            "DisplayId": "0-SH-6010001-1",
+            "Name": "Case0",
+            "Status": 0,
+            "Index": 0,
+            "RelGuid": null,
+            "Type": "C"
+          }
+        ]
+      },
+      {
+        "Cells": [
+          {
+            "ID": 0,
+            "Status": 1,
+            "AssigneeName": null,
+            "AssignerName": null
+          },
+          {
+            "ID": 0,
+            "Status": 1,
+            "AssigneeName": null,
+            "AssignerName": null
+          }
+        ],
+        "ID": 0,
+        "DisplayId": "0-SH-6010002-1",
+        "Name": "Section1",
+        "Description": "Section Description1",
+        "Status": 0,
+        "Index": 0,
+        "RelGuid": null,
+        "Type": "S",
+        "Children": [
+          {
+            "Cells": [
+              {
+                "Result": 0,
+                "ID": 1601000100001000000,
+                "Status": 0,
+                "AssigneeName": "Alex_test",
+                "AssignerName": "Son_Le"
+              },
+              {
+                "Result": 0,
+                "ID": 1601000100001000000,
+                "Status": 0,
+                "AssigneeName": "Alex_test",
+                "AssignerName": "Son_Le"
+              }
+            ],
+            "ID": 0,
+            "DisplayId": "0-SH-6010002-1",
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 0,
+            "RelGuid": null,
+            "Type": "C"
+          },
+          {
+            "Cells": [
+              {
+                "Result": 0,
+                "ID": 1601000100001000000,
+                "Status": 0,
+                "AssigneeName": "Alex_test",
+                "AssignerName": "Son_Le"
+              },
+              {
+                "Result": 0,
+                "ID": 1601000100001000000,
+                "Status": 0,
+                "AssigneeName": "Alex_test",
+                "AssignerName": "Son_Le"
+              }
+            ],
+            "ID": 0,
+            "DisplayId": "0-SH-6010002-1",
+            "Name": "Case1",
+            "Status": 0,
+            "Index": 0,
+            "RelGuid": null,
+            "Type": "C"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,317 @@
+<div class="taskDetail container-fluid">
+  <div class="row-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="nova-title">
+          <div class="nova-image"></div>
+        </div>
+      </div>
+    </div>
+    <div class="nova-content">
+      <div class="tabbable">
+        <ul id="myTab" class="nav nav-tabs">
+          <li class="active" ng-class="{'active': $ctrl.current === 0}" ng-click="$ctrl.show(0)">
+            <a ng-click="$ctrl.getPlan()" href="" data-toggle="tab">Task</a>
+          </li>
+          <li ng-class="{'active': $ctrl.current === 1}" ng-click="$ctrl.show(1)">
+            <a ng-click="$ctrl.getSectionsInfo()" href="">Matrix</a>
+          </li>
+          <li ng-class="{'active': $ctrl.current === 2}" ng-click="$ctrl.show(2)">
+            <a ng-click="$ctrl.getFamilyInfo()" href="" data-toggle="tab">Report</a>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content nova-content-tab" ui-view="content">
+          <div class="tab-pane fade in " ng-class="{'active': $ctrl.current === 0}"
+               id="Task">
+            <div class="row">
+              <form class="form-horizontal" role="form">
+                <div class="col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                  <div class="row">
+
+                    <div class="form-group form-group-sm">
+                      <label for="taskId" class="col-md-4 control-label">ID:</label>
+
+                      <div class="col-md-6">
+                        <p type="text" class="form-control-static"
+                           id="taskId" ng-model="$ctrl.taskInfo.ID">{{$ctrl.taskInfo.ID}}</p>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label for="planName" class="col-md-4 control-label">Name:</label>
+
+                      <div class="col-md-6">
+                        <input class="form-control" id="planName" ng-model="$ctrl.taskInfo.Name"
+                               placeholder="task name" ng-disabled="$ctrl.isDisabled"/>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label for="taskDescription"
+                             class="col-md-4 control-label">Description:</label>
+
+                      <div class="col-md-6">
+                        <textarea class="form-control" id="taskDescription" ng-disabled="$ctrl.isDisabled"
+                                  ng-model="$ctrl.taskInfo.Description" id="$ctrl.planDescription"></textarea>
+                      </div>
+
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label for="touchType" class="col-md-4 control-label">Touch Type：</label>
+
+                      <div class="col-md-6">
+                        <input class="form-control" id="touchType"
+                               ng-model="$ctrl.taskInfo.TouchType"
+                               placeholder="task name" ng-disabled="$ctrl.isDisabled"/>
+                      </div>
+
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label for="startTime" class="col-md-4 control-label">StartTime:</label>
+
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" ng-disabled="$ctrl.isDisabled"
+                               id="startTime"
+                               ng-bind="$ctrl.taskInfo.StartTime=($ctrl.taskInfo.StartTime|date:'yyyy-MM-dd')"
+                               ng-model="$ctrl.taskInfo.StartTime"/>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label for="endTime" class="col-md-4 control-label">EndTime：</label>
+
+                      <div class="col-md-6">
+                        <input class="form-control" id="endTime"
+                               ng-bind="$ctrl.taskInfo.EndTime=($ctrl.taskInfo.EndTime|date:'yyyy-MM-dd')"
+                               ng-model="$ctrl.taskInfo.EndTime"
+                               ng-disabled="$ctrl.isDisabled"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 nova-detail-plan-right-panel">
+                  <div class="row">
+                    <div class="form-group form-group-sm">
+                      <label class="col-md-4 control-label">Plan:</label>
+                      <div class="col-md-4">
+                        <p class="form-control-static">{{$ctrl.taskInfo.PlanId}}</p>
+                      </div>
+                      <div class="col-md-3">
+                        <button class="btn btn-primary btn-sm nova-change"
+                                ng-click="$ctrl.getPlanOwner()" data-toggle="modal"
+                                data-target="#myModal">Change
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="form-group form-group-sm">
+                      <label class="col-md-4 control-label">Status:</label>
+                      <div class="col-md-4">
+                        <p class="form-control-static">{{$ctrl.taskInfo.Status}}</p>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label class="col-md-4 control-label">Target:</label>
+                      <div class="col-md-4">
+                        <p class="form-control-static">{{$ctrl.taskInfo.Target}}</p>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label class="col-md-4 control-label">TestingSiteId:</label>
+                      <div class="col-md-4">
+                        <p class="form-control-static">{{$ctrl.taskInfo.TestingSiteId}}</p>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label class="col-md-4 control-label">TestingLead:</label>
+                      <div class="col-md-4">
+                        <p class="form-control-static">{{$ctrl.taskInfo.TestingLead}}</p>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label for="keyWord" class="col-md-4 control-label"> Key Word:</label>
+
+                      <div class="col-md-6">
+                        <input class="form-control" id="keyWord"
+                               ng-model="$ctrl.taskInfo.Keyword"
+                               placeholder="Key Word" ng-disabled="$ctrl.isDisabled"/>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label for="taskTotalOnduty" class="col-md-4 control-label">
+                        Task_total_onduty:</label>
+
+                      <div class="col-md-6">
+                        <input class="form-control" id="taskTotalOnduty"
+                               ng-model="$ctrl.taskInfo.task_total_onduty"
+                               placeholder="Task total onduty" ng-disabled="$ctrl.isDisabled"/>
+                      </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                      <label for="taskTotalOndutyNo" class="col-md-4 control-label">
+                        Task_total_onduty_nobody:</label>
+
+                      <div class="col-md-6">
+                        <input class="form-control" id="taskTotalOndutyNo"
+                               ng-model="$ctrl.taskInfo.task_total_onduty_nobody"
+                               placeholder="Task total onduty nobody" ng-disabled="$ctrl.isDisabled"/>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </form>
+              <div class="col-md-12 col-sm-12">
+                <div class="nova-detail-plan-btn-group">
+                  <div style="float: right; margin-left: 15px;" ng-repeat="ctrlBtn in $ctrl.taskInfo.Permissions">
+                    <button type="button" class="btn btn-primary btn-sm" ng-click="$ctrl.submitInfo(ctrlBtn)">
+                      {{ctrlBtn}}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade in" id="Sections" ng-class="{'active': $ctrl.current === 1}"
+               ng-click="$ctrl.show(1)">
+            <div class="table-responsive">
+
+              <div class="taskMatrix container-fluid nova-container-fluid">
+                <div class="navbar nova-navbar-default">
+                  <div class="container-fluid nova-container-fluid">
+                    <div class="col-md set-btn">
+                      <button class="btn btn-primary" ng-click="$ctrl.getFinalParams()">setNP
+                      </button>
+                    </div>
+                    <div class="col-md set-btn">
+                      <button class="btn btn-primary">setNS</button>
+                    </div>
+                    <div class="col-md set-btn">
+                      <button class="btn btn-primary">setNormal</button>
+                    </div>
+                    <div class="col-md set-btn">
+                      <button class="btn btn-primary">setAssigenee</button>
+                    </div>
+                    <div class="col-md">
+                      <div>
+                        <label class="nova-level" style="line-height: 30px;">Level:</label>
+                        <select class="form-control nova-select" ng-init="$ctrl.selectedName=1"
+                                ng-model="$ctrl.selectedName"
+                                ng-options="selectedName for selectedName in $ctrl.selects"></select>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <button class="btn btn-primary">addInstance</button>
+                    </div>
+                    <div class="col-md">
+                      <button class="btn btn-primary">addComponent</button>
+                    </div>
+                    <div class="col-md">
+                      <button class="btn btn-primary">deleteComponent</button>
+                    </div>
+                    <div class="col-md">
+                      <button class="btn btn-primary">save</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="nova-box">
+                  <table class="table table-bordered nova-task-table  nova-task-layout">
+                    <thead class="fixedHeader">
+                    <tr class="alternateRow">
+                      <td>
+                        <ul class="nova-task-ul">
+                          <li>
+                            <span>task1</span>
+                          </li>
+                          <li>
+                            <span>plan1</span><br/>
+                            <button class="btn btn-primary nova-change-btn">change</button>
+                          </li>
+                        </ul>
+                      </td>
+                      <td>
+                        <!-- instance directive-->
+                        <table class="table table-bordered nova-task-table">
+                          <tr>
+                            <td ng-repeat="instance in $ctrl.instances">
+                              <instance-settings instance="instance"
+                                                 selected-level="$ctrl.selectedName"></instance-settings>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    </thead>
+                    <!-- sections-cases directive-->
+                    <tbody class="scrollContent">
+                    <tr ng-repeat="SectionTree in $ctrl.SectionTree"
+                        ng-show='(SectionTree.PackageType==="C"&&$ctrl.showCase&& SectionTree.SectionId==$ctrl.secId)||SectionTree.PackageType==="S"'>
+                      <td>
+                        <div ng-hide='SectionTree.PackageType==="C"' class="nova-glyphicon-ctrl"
+                             ng-click="$ctrl.showCases(SectionTree.ID,$index)">
+                                                    <span class="glyphicon glyphicon-plus"
+                                                          ng-show="$ctrl.showCtrlBtn && $ctrl.index==$index"></span>
+                          <span class="glyphicon glyphicon-minus"
+                                ng-hide="$ctrl.showCtrlBtn && $ctrl.index==$index"></span>
+                        </div>
+                        <input class="row-ctrl" type="checkbox"
+                               ng-click="$ctrl.rowCtrlFunc(SectionTree.ID,$index)"
+                               ng-checked="SectionTree.checkItem"/>
+                        <span class="nova-sec-case">{{SectionTree.Name}}</span>
+                      </td>
+                      <td colspan="$ctrl.instances.length+1" style="width: 100%;">
+                        <table class="table table-bordered nova-task-table">
+                          <tr>
+                            <td ng-repeat="packageList in $ctrl.PackageList[$index]">
+                              <sc-info section-tree="$ctrl.SectionTree"
+                                       package-id="$ctrl.PackageId"
+                                       package-list="packageList" dir-param="$ctrl.param"
+                                       row-selected="{{$ctrl.rowSelected}}"
+                                       section-data="$ctrl.SectionTree"></sc-info>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade in" id="Family" ng-class="{'active': $ctrl.current === 2}"
+               ng-click="$ctrl.show(2)">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Comments</th>
+                  <th>Owner</th>
+                  <th>UpdateTime</th>
+
+                </tr>
+                <tr ng-repeat="model in $ctrl.family">
+                  <td>{{model.ID}}</td>
+                  <td>{{model.Name}}</td>
+                  <td>{{model.Comments}}</td>
+                  <td>{{model.Owner}}</td>
+                  <td>{{model.UpdateTime}}</td>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="nova-footer container">
+    <div class="btn-group nova-btn-group" ng-repeat="btnText in btnsText">
+      <button class="btn btn-primary nova-change" ng-click="novaBtnCtrl(btnText)">{{btnText}}</button>
+
+    </div>
+  </footer>
+</div>
+</div>
+

@@ -1,0 +1,14 @@
+<div class="modal-header" style="background-color: #337ab7;color: #fff;">
+  <button ng-click="$ctrl.cancel()" type="button" class="close">×</button>
+  <h4 class="modal-title" id="modal-title">Change Category</h4>
+</div>
+
+<div class="modal-body nova-category-modal">
+  <div id="addPlanTree"></div>
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Close</button>
+  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Save</button>
+
+</div>
